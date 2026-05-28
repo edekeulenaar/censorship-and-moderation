@@ -1026,11 +1026,16 @@ async function renderBubble({ csv, yField, hostSel, figId, yearInputs }) {
         .attr("r",  d => rScale(+d.Citations || 0))
         .attr("fill", d => color(d.Discipline))
         .attr("opacity", 0.74)
-        .on("mouseenter", function (e, d) {
+        .on("mouseenter", async function (e, d) {
           d3.select(this).raise().attr("opacity", 1);
+          const url   = await urlByKey(d.Key);
+          const title = escapeHtml(d.Title || "(untitled)");
+          const tHtml = url
+            ? `<a class="ext" href="${escapeHtml(url)}" target="_blank" rel="noopener">${title} ↗</a>`
+            : title;
           const abs = (d["Abstract Note"] || "").trim();
           dataCard.show(`
-            <div class="dc-t">${escapeHtml(d.Title || "(untitled)")}</div>
+            <div class="dc-t">${tHtml}</div>
             <div class="dc-meta">${escapeHtml(d.Author || "")} · ${escapeHtml(String(d["Publication Year"]))}</div>
             <div class="dc-row"><span>${yField}</span>${escapeHtml(d[yField] || "")}</div>
             <div class="dc-row"><span>Discipline</span>${escapeHtml(d.Discipline || "")}</div>
@@ -1038,7 +1043,12 @@ async function renderBubble({ csv, yField, hostSel, figId, yearInputs }) {
             ${abs ? `<div class="dc-abs">${escapeHtml(abs)}</div>` : ""}`, e);
         })
         .on("mousemove", e => dataCard.move(e))
-        .on("mouseleave", function () { d3.select(this).attr("opacity", 0.74); dataCard.hide(); });
+        .on("mouseleave", function () { d3.select(this).attr("opacity", 0.74); dataCard.hide(); })
+        .on("click", async function (e, d) {
+          e.stopPropagation();
+          const url = await urlByKey(d.Key);
+          if (url) window.open(url, "_blank", "noopener");
+        });
 
     // Register the sidebar key for this figure.
     figKey.register(figId, {
