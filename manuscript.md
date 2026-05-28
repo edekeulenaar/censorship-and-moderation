@@ -104,7 +104,10 @@ A third concerns the structure of the platform critique. The chapter codes conte
 A fourth concerns the LLM-assisted classification itself. Even with verbatim-quote anchoring and a fixed vocabulary, the model exercises judgment in selecting which passages count as the *predominant* framing of a paper, and that judgment is not perfectly stable across runs. Where the analyses below turn on small differences between categories, this should be borne in mind; where they turn on large patterns (a discipline favouring one cluster of categories over another, a topic gaining or losing share over a decade), it should not. Finally, the taxonomy itself reflects a particular reading. Categories are grounded in verbatim phrases, but their clustering is interpretive, and an alternative reader might draw the lines differently — particularly at the boundary between *content moderation* and *platform governance*, which I have placed at the level of analytical scope (the practice itself vs. the institutional, legal and infrastructural arrangement around it) but which other readers might place elsewhere.
 
 # Content moderation: an overview
-The study of content moderation has traversed many topics over the years. One may remember 
+
+The study of content moderation has traversed many topics before gaining the connotation of a censorial technique. The earliest studies begin 
+
+- The earliest of these is the idea of moderation as 
 
 - Censorship is throughout but focused on literary studies / history / censorship studies / political science
 - Content moderation appears from 1980's onwards, first as management of online debates and then as content moderation, and then as platform governance
