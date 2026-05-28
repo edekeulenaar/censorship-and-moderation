@@ -884,8 +884,30 @@ async function renderBubble({ csv, yField, hostSel, figId, yearInputs }) {
    7. Figures 5 / 6 — Sankey  Topic|Sub-topic → Country|Medium
    ─────────────────────────────────────────────────────────────────────── */
 
-async function renderSankeyTwo({ csv, leftField, rightField, hostSel, figId, valueField="Quantity" }) {
-  const rows = await loadCSV(csv);
+async function renderSankeyTwo({ csv, leftField, rightField, hostSel, figId,
+                                 valueField="Quantity", topRight=0 }) {
+  let rows = await loadCSV(csv);
+  // OPTIONAL: cap the right-column to its `topRight` largest targets and
+  // roll the long tail into one "Other (N)" bucket. Keeps figures with very
+  // long tails (e.g. 200 countries) legible without losing the total mass.
+  if (topRight && Number.isFinite(+topRight)) {
+    const totals = new Map();
+    rows.forEach(r => {
+      const v = +r[valueField] || 0;
+      const t = r[rightField] || "(unknown)";
+      totals.set(t, (totals.get(t) || 0) + v);
+    });
+    const keep = new Set([...totals.entries()]
+      .sort((a, b) => b[1] - a[1]).slice(0, +topRight).map(d => d[0]));
+    const tailCount = totals.size - keep.size;
+    const otherLabel = tailCount > 0 ? `Other (${tailCount})` : null;
+    rows = rows.map(r => {
+      const t = r[rightField] || "(unknown)";
+      if (keep.has(t)) return r;
+      return { ...r, [rightField]: otherLabel };
+    }).filter(r => r[rightField] != null);
+  }
+
   const N = new Map(), L = new Map();
   const node = (name, stage) => {
     const k = `s${stage}::${name}`;
@@ -914,7 +936,11 @@ async function renderSankeyTwo({ csv, leftField, rightField, hostSel, figId, val
   const LEFT_GUTTER  = 220;       // reserve room for long left-column labels
   const RIGHT_GUTTER = 220;       // reserve room for long right-column labels
   const colCount = d3.max(d3.rollups(nodes, v => v.length, n => n.stage), d => d[1]) || 1;
-  const H = Math.max(480, TOP_PAD + 30 + colCount * NODE_PAD * 2);
+  // Cap H so the figure stays inside one viewport. With many nodes we still
+  // need vertical space for proportional rectangles, but cap at ~1.2× width
+  // so the chart is never taller than it is wide.
+  const H_MAX = Math.round(W * 1.2);
+  const H = Math.min(H_MAX, Math.max(480, TOP_PAD + 30 + colCount * NODE_PAD * 2));
   const svg = host.append("svg").attr("class", "sankey alluvial")
     .attr("viewBox", [0, 0, W, H]).attr("preserveAspectRatio", "xMidYMid meet")
     .attr("width", "100%").attr("height", "auto");
@@ -1972,8 +1998,9 @@ window.addEventListener("DOMContentLoaded", async () => {
                     minInputId: "net-subtopics-min",
                     figId: "fig-network-subtopics" }));
 
-  // Figure 1 — Language → Country alluvial. Uses the shared
-  // `renderSankeyTwo` renderer with the new long-form CSV.
+  // Figure 1 — Language → Country alluvial. The long tail of countries
+  // (≈ 180 entries past the top 25) is rolled into an "Other" bucket so the
+  // figure fits in one viewport.
   await safe("lang × country", "#sankey-lang-country")(() =>
     renderSankeyTwo({
       csv: "data/items_by_language_country.csv",
@@ -1982,6 +2009,7 @@ window.addEventListener("DOMContentLoaded", async () => {
       valueField: "Items",
       hostSel: "#sankey-lang-country",
       figId: "fig-lang-country",
+      topRight: 25,
     }));
 
   restructureFigureNotes(); // notes go OUTSIDE the figure card (#1)
