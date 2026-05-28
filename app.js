@@ -212,34 +212,20 @@ async function renderManuscript() {
       }
     });
 
-    // 4a-fig) Auto-link in-prose figure screenshots to their live counterpart.
-    //         An <img> whose filename matches `fig-<slug>.(png|jpg|...)` AND
-    //         whose <slug> matches a <figure id="fig-<slug>"> elsewhere on
-    //         the page is wrapped in an anchor to that figure, and a small
-    //         "View interactive ↗" link is appended below the caption.
+    // 4a-fig) Mark in-prose figure placeholders. An <img> whose filename is
+    //         `fig-<slug>.(png|jpg|svg|…)` is a placeholder for the live
+    //         interactive `<figure id="fig-<slug>">`. We mark it here; the
+    //         actual swap (move the live <figure> into this spot) happens in
+    //         `promoteInlineFigures()`, after every chart has finished
+    //         rendering in the Analysis section.
     host.querySelectorAll("img").forEach(img => {
       const src = img.getAttribute("src") || "";
       const fname = src.split("/").pop() || "";
       const m = fname.match(/^(fig[-_][\w.-]+?)(?:\.(?:png|jpe?g|gif|svg|webp))?$/i);
       if (!m) return;
       const slug = m[1].replace(/_/g, "-").toLowerCase();
-      const target = document.getElementById(slug);
-      if (!target) return;
-      // Wrap the img in a clickable anchor without affecting the caption.
-      const a = document.createElement("a");
-      a.className = "fig-live-link";
-      a.href = "#" + slug;
-      a.title = "View interactive figure";
-      img.parentNode.insertBefore(a, img);
-      a.appendChild(img);
-      // Append a small "View interactive ↗" link as a sibling of the figure
-      // container (paragraph or figure element).
-      const container = a.closest("figure, p, div") || a.parentElement;
-      const ext = document.createElement("a");
-      ext.className = "fig-live-pill";
-      ext.href = "#" + slug;
-      ext.textContent = "View interactive ↗";
-      container.appendChild(ext);
+      img.dataset.fig = slug;
+      img.classList.add("inline-fig-placeholder");
     });
 
     // 4a-quater) Anchor-aware auto-open: when the URL has a #fragment that
@@ -2222,7 +2208,50 @@ window.addEventListener("DOMContentLoaded", async () => {
   //                      manuscript.md file, not in the page.
   observeActiveFigure();    // swap the sidebar fig-key as you scroll
   setupFigureDownloads();   // ⬇ PNG / ⬇ SVG buttons on every chart
+  promoteInlineFigures();   // swap manuscript placeholders for live figures
 });
+
+/* If `manuscript.md` embeds a screenshot called `fig-<slug>.png`, we treat
+   it as a placeholder for the live interactive figure with id `fig-<slug>`.
+   On the live page we MOVE that <figure> from its Analysis-section slot
+   into the placeholder's spot, so the prose flows directly into the
+   interactive chart. The PNG and any "View interactive" pill we added earlier
+   are discarded — they were only for the static (PDF) surface. */
+function promoteInlineFigures() {
+  const placeholders = document.querySelectorAll("img.inline-fig-placeholder");
+  placeholders.forEach(img => {
+    const slug = img.dataset.fig;
+    if (!slug) return;
+    const live = document.getElementById(slug);
+    if (!live || live.classList.contains("fig-live-mounted")) return;
+
+    // Walk up to the outermost wrapper the user might have written:
+    //   `[![alt](fig.png)](url)` → wrapping <a>
+    //   `![alt](fig.png)`        → just the <img>
+    // Replace whichever is at the top with the live figure.
+    let outer = img;
+    while (outer.parentElement &&
+           outer.parentElement !== document.body &&
+           (outer.parentElement.children.length === 1 ||
+            outer.parentElement.tagName === "A")) {
+      const p = outer.parentElement;
+      // Only climb past <a>, <picture>, or single-child <p>/<span>/<figure>.
+      if (!/^(A|PICTURE|P|SPAN|FIGURE)$/.test(p.tagName)) break;
+      outer = p;
+    }
+    // Drop any "View interactive ↗" pill we'd attached as a sibling.
+    (outer.parentElement || document)
+       .querySelectorAll(".fig-live-pill").forEach(el => el.remove());
+
+    outer.replaceWith(live);
+    live.classList.add("fig-live-mounted");
+    // Smooth scroll position recovery if the URL already points at the slug.
+    if (location.hash === "#" + slug) {
+      requestAnimationFrame(() =>
+        live.scrollIntoView({ block: "start", behavior: "smooth" }));
+    }
+  });
+}
 
 /* ────────────────────────────────────────────────────────────────────────
    Figure export — adds "⬇ SVG" + "⬇ PNG (300 ppi)" buttons to every
