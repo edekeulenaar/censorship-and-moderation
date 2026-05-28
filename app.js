@@ -410,7 +410,7 @@ function renderPending(hostSel, msg) {
 }
 
 /* ────────────────────────────────────────────────────────────────────────
-   3. Figure 1 — Summary table
+   3. Table 2 — Corpus summary table (renumbered from Figure 1)
    ─────────────────────────────────────────────────────────────────────── */
 
 const LABELS = {
@@ -1972,7 +1972,7 @@ window.addEventListener("DOMContentLoaded", async () => {
                     minInputId: "net-subtopics-min",
                     figId: "fig-network-subtopics" }));
 
-  // Figure 11 — Language → Country alluvial. Uses the shared
+  // Figure 1 — Language → Country alluvial. Uses the shared
   // `renderSankeyTwo` renderer with the new long-form CSV.
   await safe("lang × country", "#sankey-lang-country")(() =>
     renderSankeyTwo({
