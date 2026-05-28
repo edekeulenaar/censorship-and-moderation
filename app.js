@@ -2040,10 +2040,13 @@ async function renderBump({ csv, yField, hostSel, figId, yearInputs,
       .attr("transform", `translate(${m.left},0)`)
       .call(d3.axisLeft(y).ticks(6));
 
+    // Straight segments between data points — no Kandinsky-style humps
+    // between zero-value years. Each line is now an honest representation
+    // of "items mentioning this medium in year Y".
     const line = d3.line()
       .x(([yr]) => x(yr))
       .y(([, n]) => y(n))
-      .curve(d3.curveMonotoneX);
+      .curve(d3.curveLinear);
 
     const series = groups.map(g => ({
       group: g,
