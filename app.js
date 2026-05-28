@@ -2434,6 +2434,15 @@ function annotateEdgesForExport(srcSvg, cloneSvg) {
 }
 
 function cloneWithInlineStyles(srcSvg) {
+  // Properties where "none" has SEMANTIC meaning (it's not just "default").
+  // For these we keep the computed value even if it's "none" — e.g.
+  // `fill: none` on a stroked <path> distinguishes a line from a filled
+  // shape; if we strip it the default fill (black) takes over and the
+  // bumpchart lines paint as black blobs.
+  const KEEP_NONE = new Set([
+    "fill", "stroke", "stroke-dasharray", "display", "visibility",
+    "mix-blend-mode",
+  ]);
   const STYLE_PROPS = [
     "fill", "fill-opacity", "stroke", "stroke-width", "stroke-opacity",
     "stroke-dasharray", "stroke-linecap", "stroke-linejoin",
@@ -2450,7 +2459,10 @@ function cloneWithInlineStyles(srcSvg) {
     let s = "";
     for (const p of STYLE_PROPS) {
       const v = cs.getPropertyValue(p);
-      if (v && v !== "none" && v !== "normal") s += `${p}:${v};`;
+      if (!v) continue;
+      if (v === "normal") continue;            // CSS default — no point inlining
+      if (v === "none" && !KEEP_NONE.has(p)) continue;
+      s += `${p}:${v};`;
     }
     if (s) dstAll[i].setAttribute("style", s);
   }
