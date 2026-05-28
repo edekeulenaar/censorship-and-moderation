@@ -2211,6 +2211,129 @@ window.addEventListener("DOMContentLoaded", async () => {
   // setupCaptionEdits() disabled — manuscript editing happens in the source
   //                      manuscript.md file, not in the page.
   observeActiveFigure();    // swap the sidebar fig-key as you scroll
+  setupFigureDownloads();   // ⬇ PNG / ⬇ SVG buttons on every chart
 });
+
+/* ────────────────────────────────────────────────────────────────────────
+   Figure export — adds "⬇ SVG" + "⬇ PNG (300 ppi)" buttons to every
+   `.fig` card that contains an SVG chart. The PNG export rasterises the
+   SVG at ~4× the screen pixel density (≈ 4 × 96 = 384 ppi nominal, well
+   over the 300 ppi requested) onto a paper-coloured canvas, then
+   downloads it via Blob URL.
+   ─────────────────────────────────────────────────────────────────────── */
+
+const PNG_SCALE = 4;                                     // ≈ 384 nominal ppi
+const PAPER_BG  = "#faf7f2";                             // --paper
+
+function setupFigureDownloads() {
+  document.querySelectorAll(".fig").forEach(fig => {
+    // Re-attach on every chart re-render (some figs swap views).
+    const tryAttach = () => {
+      const svg = fig.querySelector("svg.chart, svg.sankey, svg.alluvial, svg");
+      if (!svg) return;
+      const foot = fig.querySelector(".fig-foot");
+      if (!foot) return;
+      if (foot.querySelector(".dl-png")) return;          // already attached
+      const slug = fig.id || "figure";
+      const png = document.createElement("button");
+      png.type = "button"; png.className = "dl dl-png";
+      png.textContent = "⬇ PNG (300 ppi)";
+      png.addEventListener("click", () => exportSVGtoPNG(svg, slug));
+      const sv  = document.createElement("button");
+      sv.type  = "button"; sv.className = "dl dl-svg";
+      sv.textContent = "⬇ SVG";
+      sv.addEventListener("click", () => exportSVGtoSVG(svg, slug));
+      foot.insertBefore(sv,  foot.firstChild);
+      foot.insertBefore(png, foot.firstChild);
+    };
+    tryAttach();
+    // Some figures rebuild their SVG on user input — observe and re-attach.
+    new MutationObserver(tryAttach).observe(fig, { childList: true, subtree: true });
+  });
+}
+
+function cloneWithInlineStyles(srcSvg) {
+  const STYLE_PROPS = [
+    "fill", "fill-opacity", "stroke", "stroke-width", "stroke-opacity",
+    "stroke-dasharray", "stroke-linecap", "stroke-linejoin",
+    "font-family", "font-size", "font-weight", "font-style",
+    "letter-spacing", "text-transform", "text-anchor",
+    "dominant-baseline", "alignment-baseline",
+    "opacity", "color", "visibility", "display", "mix-blend-mode",
+  ];
+  const clone = srcSvg.cloneNode(true);
+  const srcAll = [srcSvg, ...srcSvg.querySelectorAll("*")];
+  const dstAll = [clone,  ...clone.querySelectorAll("*")];
+  for (let i = 0; i < srcAll.length; i++) {
+    const cs = getComputedStyle(srcAll[i]);
+    let s = "";
+    for (const p of STYLE_PROPS) {
+      const v = cs.getPropertyValue(p);
+      if (v && v !== "none" && v !== "normal") s += `${p}:${v};`;
+    }
+    if (s) dstAll[i].setAttribute("style", s);
+  }
+  // Ensure the SVG has an explicit width/height for rasterisers (some PNG
+  // exporters refuse to render percentage-sized SVGs).
+  const vb = srcSvg.viewBox && srcSvg.viewBox.baseVal;
+  const w = vb && vb.width  ? vb.width  : srcSvg.clientWidth  || 800;
+  const h = vb && vb.height ? vb.height : srcSvg.clientHeight || 600;
+  clone.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+  clone.setAttribute("xmlns:xlink", "http://www.w3.org/1999/xlink");
+  clone.setAttribute("width",  w);
+  clone.setAttribute("height", h);
+  if (!clone.getAttribute("viewBox"))
+    clone.setAttribute("viewBox", `0 0 ${w} ${h}`);
+  return { svg: clone, width: w, height: h };
+}
+
+function svgString(cloneSvg) {
+  // Prepend an XML declaration so editors (Inkscape, Illustrator) treat
+  // the download as a proper SVG document.
+  return '<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n'
+       + new XMLSerializer().serializeToString(cloneSvg);
+}
+
+function triggerDownload(blob, filename) {
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url; a.download = filename;
+  document.body.appendChild(a); a.click();
+  setTimeout(() => { URL.revokeObjectURL(url); a.remove(); }, 0);
+}
+
+function exportSVGtoSVG(srcSvg, slug) {
+  const { svg } = cloneWithInlineStyles(srcSvg);
+  const xml = svgString(svg);
+  triggerDownload(new Blob([xml], { type: "image/svg+xml;charset=utf-8" }),
+                  `${slug}.svg`);
+}
+
+async function exportSVGtoPNG(srcSvg, slug) {
+  const { svg, width, height } = cloneWithInlineStyles(srcSvg);
+  const xml = svgString(svg);
+  // Load the inline SVG into an Image via a Blob URL — works around the
+  // cross-origin tainting that data: URLs sometimes incur.
+  const blob = new Blob([xml], { type: "image/svg+xml;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+  try {
+    const img = new Image();
+    img.crossOrigin = "anonymous";
+    img.src = url;
+    await img.decode();
+    const canvas = document.createElement("canvas");
+    canvas.width  = Math.round(width  * PNG_SCALE);
+    canvas.height = Math.round(height * PNG_SCALE);
+    const ctx = canvas.getContext("2d");
+    ctx.fillStyle = PAPER_BG;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+    canvas.toBlob(b => {
+      if (b) triggerDownload(b, `${slug}@${PNG_SCALE}x.png`);
+    }, "image/png");
+  } finally {
+    URL.revokeObjectURL(url);
+  }
+}
 
 })();

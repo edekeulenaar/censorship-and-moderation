@@ -602,6 +602,16 @@ a.cite-link { cursor: pointer; }
   border-bottom: 1px solid rgba(28,26,24,0.18);
 }
 .dl:hover { color: var(--accent); border-bottom-color: var(--accent); }
+/* PNG / SVG download buttons match the visual weight of the CSV link. */
+button.dl {
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(28,26,24,0.18);
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+}
+button.dl:hover { color: var(--accent); border-bottom-color: var(--accent); }
 .alt { flex: 1 1 18rem; min-width: 0; font-style: italic; }
 
 .page-foot {
