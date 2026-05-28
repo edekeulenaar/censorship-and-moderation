@@ -2217,8 +2217,8 @@ window.addEventListener("DOMContentLoaded", async () => {
       renderLangCountryFig(mode).catch(console.error);
     }));
 
-  restructureFigureNotes(); // notes go OUTSIDE the figure card (#1)
-  setupNotes();             // per-figure notes + download button
+  // restructureFigureNotes() / setupNotes() disabled — per-figure note
+  // textareas were removed from index.html; nothing to bundle or wire up.
   // setupCaptionEdits() disabled — manuscript editing happens in the source
   //                      manuscript.md file, not in the page.
   observeActiveFigure();    // swap the sidebar fig-key as you scroll

@@ -380,11 +380,31 @@ code, pre { font-family: var(--mono); font-size: 0.93em; }
   box-shadow: 0 1px 3px rgba(28, 26, 24, 0.06);
 }
 
-/* When the live figure is moved INTO the manuscript flow it should sit on
-   the same paper-alt frame the static screenshot used, so the visual
-   rhythm of the chapter doesn't change between dynamic and static surfaces. */
+/* When the live figure is moved INTO the manuscript flow it BREAKS OUT
+   of the prose column to use most of the available content width, so
+   ribbons, labels and dots stay legible at a normal reading distance.
+   The prose around it stays at its comfortable measure. */
 .prose figure.fig.fig-live-mounted {
-  margin: 1.6em 0;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(96vw - var(--side-w), 1200px);
+  max-width: none;
+  margin: 2.2em 0 2.4em;
+  padding: 1rem 1.2rem 0.9rem;
+  background: var(--paper-alt);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+.prose figure.fig.fig-live-mounted > .fig-cap   { margin-bottom: 0.6em; }
+.prose figure.fig.fig-live-mounted > .fig-body  { width: 100%; }
+.prose figure.fig.fig-live-mounted > .fig-foot  { margin-top: 0.7em; }
+@media (max-width: 900px) {
+  .prose figure.fig.fig-live-mounted {
+    width: 100%;
+    left: 0;
+    transform: none;
+  }
 }
 
 /* Soft flash when an in-text link jumps to its target block (^slug anchor). */
