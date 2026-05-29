@@ -510,9 +510,11 @@ def main() -> None:
         if top not in TOPICS:
             continue
         pdf = (r.get("PDF Path") or "").strip()
-        # Pipe-joined list of every Media category the item touches; the
-        # client filters via substring-match against this column.
-        media = " | ".join(sorted(item_media_cat[t]))
+        # Pipe-joined lists of every Media category / Country the item
+        # touches; the client filters via substring-match against these
+        # multi-valued columns.
+        media     = " | ".join(sorted(item_media_cat[t]))
+        countries = " | ".join(sorted(item_countries[t]))
         row = [
             item_cit.get(t, 0),
             year_of(t) or "",
@@ -527,6 +529,7 @@ def main() -> None:
             pdf,
             item_lang.get(t, ""),
             media,
+            countries,
         ]
         bee_t.append(row)
         if top == SUBTOPIC_PARENT:
@@ -543,6 +546,7 @@ def main() -> None:
                     pdf,
                     item_lang.get(t, ""),
                     media,
+                    countries,
                 ])
 
     bee_t.sort(key=lambda r: (r[3], r[4], r[5], str(r[1]), -r[0]))
@@ -550,12 +554,14 @@ def main() -> None:
     write_csv(OUT / "beeswarm_by_topic.csv",
               ["Citations", "Publication Year", "Discipline", "Topic", "Type",
                "Category", "Mentioned item", "Page", "Title", "Author", "Key",
-               "Abstract Note", "PDF Path", "Language", "Media categories"],
+               "Abstract Note", "PDF Path", "Language", "Media categories",
+               "Countries"],
               bee_t)
     write_csv(OUT / "beeswarm_by_cm_subtopic.csv",
               ["Citations", "Publication Year", "Discipline", "Sub-topic", "Type",
                "Category", "Mentioned item", "Page", "Title", "Author", "Key",
-               "Abstract Note", "PDF Path", "Language", "Media categories"],
+               "Abstract Note", "PDF Path", "Language", "Media categories",
+               "Countries"],
               bee_s)
 
     # ── 11–14. Network CSVs (Topic-level and CM Sub-topic-level) ────────────

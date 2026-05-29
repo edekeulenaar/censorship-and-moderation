@@ -6,12 +6,33 @@
     "harvard": "Allan, K. (2016) ‘A Benchmark for Politeness’, in A. Capone and J. L. Mey (eds.) *Interdisciplinary Studies in Pragmatics, Culture and Society*. Cham: Springer International Publishing, pp. 397–420. doi:10.1007/978-3-319-12616-6_15",
     "link": "https://doi.org/10.1007/978-3-319-12616-6_15"
   },
+  "allanForbiddenWordsTaboo2006": {
+    "author": "Allan and Burridge",
+    "year": "2006",
+    "inline": "(Allan and Burridge, 2006)",
+    "harvard": "Allan, K. and Burridge, K. (2006) *Forbidden Words: Taboo and the Censoring of Language*. Cambridge University Press.",
+    "link": ""
+  },
   "amadieuFormesContemporainesCensure2020": {
     "author": "Amadieu and Talon-Hugon",
     "year": "2020",
     "inline": "(Amadieu and Talon-Hugon, 2020)",
     "harvard": "Amadieu, J. B. and Talon-Hugon, C. (2020) ‘Les formes contemporaines de censure’, *\\'Etudes*, Mai(5), pp. 91–102. doi:10.3917/etu.4271.0091",
     "link": "https://doi.org/10.3917/etu.4271.0091"
+  },
+  "andiocRaquelHuertaCensura1975": {
+    "author": "Andioc",
+    "year": "1975",
+    "inline": "(Andioc, 1975)",
+    "harvard": "Andioc, R. (1975) ‘La Raquel de Huerta y la censura’, *Hispanic Review*, 43(2), pp. 115. doi:10.2307/472548",
+    "link": "https://doi.org/10.2307/472548"
+  },
+  "audranForumQuoiBon2005": {
+    "author": "Audran",
+    "year": "2005",
+    "inline": "(Audran, 2005)",
+    "harvard": "Audran, J. (2005) ‘Un forum, à quoi bon?’.",
+    "link": ""
   },
   "badouardRegulationContenusInternet2020": {
     "author": "Badouard",
@@ -46,6 +67,13 @@
     "year": "2001",
     "inline": "(Bourdieu, 2001)",
     "harvard": "Bourdieu, P. (2001) *Langage et pouvoir symbolique*. Seuil.",
+    "link": ""
+  },
+  "butlerRuledOutVocabularies1998": {
+    "author": "Butler",
+    "year": "1998",
+    "inline": "(Butler, 1998)",
+    "harvard": "Butler, J. (1998) ‘Ruled out: Vocabularies of the Censor’ *Censorship and Silencing: Practices of Cultural Regulation*. Los Angeles, CA: Getty Publications, pp. 247–259.",
     "link": ""
   },
   "carmiHiddenListenersRegulatingb": {
@@ -90,6 +118,20 @@
     "harvard": "De Gregorio, G. (2020) ‘Democratising Online Content Moderation: A Constitutional Framework’, *Computer Law & Security Review*, 36, pp. 105374. doi:10.1016/j.clsr.2019.105374",
     "link": "https://doi.org/10.1016/j.clsr.2019.105374"
   },
+  "deibertAccessDeniedPractice2008": {
+    "author": "Deibert et al.",
+    "year": "2008",
+    "inline": "(Deibert et al., 2008)",
+    "harvard": "R. Deibert, J. Palfrey, R. Rohozinski and J. Zittrain (eds.) (2008) *Access Denied: The Practice and Policy of Global Internet Filtering*. Cambridge, Massachusetts: The MIT Press.",
+    "link": ""
+  },
+  "deibertGeopoliticsInternetControl2008": {
+    "author": "Deibert",
+    "year": "2008",
+    "inline": "(Deibert, 2008)",
+    "harvard": "Deibert, R. J. (2008) ‘The Geopolitics of Internet Control: Censorship, Sovereignty, and Cyberspace’ *Routledge Handbook of Internet Politics*. London: Routledge, pp. 14.",
+    "link": ""
+  },
   "delaatCoercionEmpowermentModeration2012": {
     "author": "de Laat",
     "year": "2012",
@@ -118,12 +160,26 @@
     "harvard": "Edwards, A. R. (2002) ‘The Moderator as an Emerging Democratic Intermediary: The Role of the Moderator in Internet Discussions about Public Issues’, *Information Polity*, 7(1), pp. 3–20. doi:10.3233/ip-2002-0002",
     "link": "https://doi.org/10.3233/ip-2002-0002"
   },
+  "faugereCensureTabou2023": {
+    "author": "Faugere et al.",
+    "year": "2023",
+    "inline": "(Faugere et al., 2023)",
+    "harvard": "Faugere, C., Mugnier, V. and Sylvos, F. (2023) *Censure et tabou*. Classiques Garnier.",
+    "link": ""
+  },
   "foucaultHistoireSexualiteVol2019": {
     "author": "Foucault",
     "year": "2019",
     "inline": "(Foucault, 2019)",
     "harvard": "Foucault, M. (2019) ‘Histoire de la sexualité, vol. 1, La volonté de savoir’, *Socio-anthropologie*, pp. 217–222. doi:10.4000/socio-anthropologie.6345",
     "link": "https://doi.org/10.4000/socio-anthropologie.6345"
+  },
+  "fraserRethinkingPublicSphere1990": {
+    "author": "Fraser",
+    "year": "1990",
+    "inline": "(Fraser, 1990)",
+    "harvard": "Fraser, N. (1990) ‘Rethinking the Public Sphere: A Contribution to the Critique of Actually Existing Democracy’, *Social Text*, pp. 58–80.",
+    "link": ""
   },
   "ganeshContentModerationCensorship2020": {
     "author": "Ganesh",
@@ -166,6 +222,13 @@
     "inline": "(Gorwa, 2019)",
     "harvard": "Gorwa, R. (2019) ‘What Is Platform Governance?’, *Information, Communication & Society*, 22(6), pp. 854–871. doi:10.1080/1369118x.2019.1573914",
     "link": "https://doi.org/10.1080/1369118x.2019.1573914"
+  },
+  "grimmelmannVirtuesModeration2015c": {
+    "author": "Grimmelmann",
+    "year": "2015",
+    "inline": "(Grimmelmann, 2015)",
+    "harvard": "Grimmelmann, J. (2015) ‘The Virtues of Moderation’, *Yale Journal of Law and Technology*, 17, pp. 42.",
+    "link": ""
   },
   "gyetvanCensorshipFreedomExpression2025": {
     "author": "Gyetván",
@@ -223,12 +286,33 @@
     "harvard": "Liu, D. (2024) ‘Content Moderation, Platformised Speech Governance, and Legitimacy: TikTok in South and Southeast Asia’, in *Companion Proceedings of the 16th ACM Web Science Conference*. Stuttgart Germany: ACM, pp. 27–31. doi:10.1145/3630744.3658613",
     "link": "https://doi.org/10.1145/3630744.3658613"
   },
+  "mcintoshLanguageTrumpEra2020": {
+    "author": "McIntosh and Mendoza-Denton",
+    "year": "2020",
+    "inline": "(McIntosh and Mendoza-Denton, 2020)",
+    "harvard": "McIntosh, J. and Mendoza-Denton, N. (2020) *Language in the Trump Era: Scandals and Emergencies*. Cambridge University Press.",
+    "link": ""
+  },
+  "mcintoshMaledictiveLanguageObscenity2020": {
+    "author": "McIntosh",
+    "year": "2020",
+    "inline": "(McIntosh, 2020)",
+    "harvard": "McIntosh, J. (2020) ‘Maledictive Language: Obscenity and Taboo Words’, in J. Stanlaw (ed.) *The International Encyclopedia of Linguistic Anthropology*. Wiley, pp. 1–9. doi:10.1002/9781118786093.iela0248",
+    "link": "https://doi.org/10.1002/9781118786093.iela0248"
+  },
   "morettiDistantReading2013": {
     "author": "Moretti",
     "year": "2013",
     "inline": "(Moretti, 2013)",
     "harvard": "Moretti, F. (2013) *Distant Reading*. London ; New York: Verso.",
     "link": ""
+  },
+  "mungerRightWingYouTubeSupply2020": {
+    "author": "Munger and Phillips",
+    "year": "2020",
+    "inline": "(Munger and Phillips, 2020)",
+    "harvard": "Munger, K. and Phillips, J. (2020) ‘Right-Wing YouTube: A Supply and Demand Perspective’, *The International Journal of Press/Politics*, 27(1), pp. 186–219. doi:10.1177/1940161220964767",
+    "link": "https://doi.org/10.1177/1940161220964767"
   },
   "myerswestCensoredSuspendedShadowbanned2018": {
     "author": "Myers West",
@@ -242,6 +326,13 @@
     "year": "1998",
     "inline": "(Post, 1998)",
     "harvard": "Post, R. (1998) *Censorship and Silencing: Practices of Cultural Regulation*. Los Angeles, CA: Getty Publications.",
+    "link": ""
+  },
+  "richardburtUncensoringDetailFetish1998": {
+    "author": "Burt",
+    "year": "1998",
+    "inline": "(Burt, 1998)",
+    "harvard": "Burt, R. (1998) ‘(Un)Censoring in Detail: The Fetish of Censorship in the Early Modern Past and the Postmodern Present’, in R. C. Post (ed.) *Censoring and Silencing: Practices of Cultural Regulation*. Los Angeles, CA: Getty Research Institute for the History of Art and the Humanities, pp. 17–42.",
     "link": ""
   },
   "robertsCommercialContentModeration2016": {
@@ -272,19 +363,19 @@
     "harvard": "Sander, B. (2019-2020) ‘Freedom of Expression in the Age of Online Platforms: The Promise and Pitfalls of a Human Rights-Based Approach to Content Moderation’, *Fordham International Law Journal*, 43, pp. 939.",
     "link": ""
   },
+  "seeringMetaphorsModeration2020": {
+    "author": "Seering et al.",
+    "year": "2020",
+    "inline": "(Seering et al., 2020)",
+    "harvard": "Seering, J., Kaufman, G. and Chancellor, S. (2020) ‘Metaphors in Moderation’, *New Media & Society*, pp. 1461444820964968. doi:10.1177/1461444820964968",
+    "link": "https://doi.org/10.1177/1461444820964968"
+  },
   "seeringMetaphorsModeration2022": {
     "author": "Seering et al.",
     "year": "2022",
     "inline": "(Seering et al., 2022)",
     "harvard": "Seering, J., Kaufman, G. and Chancellor, S. (2022) ‘Metaphors in Moderation’, *New Media & Society*, 24(3), pp. 621–640. doi:10.1177/1461444820964968",
     "link": "https://doi.org/10.1177/1461444820964968"
-  },
-  "sleeperPostThatWasnt2013a": {
-    "author": "Sleeper et al.",
-    "year": "2013",
-    "inline": "(Sleeper et al., 2013)",
-    "harvard": "Sleeper, M., Balebako, R., Das, S., McConahy, A. L., Wiese, J. and Cranor, L. F. (2013) ‘The Post That Wasn't: Exploring Self-Censorship on Facebook’, in *Proceedings of the 2013 Conference on Computer Supported Cooperative Work*. San Antonio Texas USA: ACM, pp. 793–802. doi:10.1145/2441776.2441865",
-    "link": "https://doi.org/10.1145/2441776.2441865"
   },
   "templetonTopicModelingHumanities2011": {
     "author": "Templeton",
@@ -320,6 +411,13 @@
     "inline": "(Wright and Street, 2007)",
     "harvard": "Wright, S. and Street, J. (2007) ‘Democracy, Deliberation and Design: The Case of Online Discussion Forums’, *New Media & Society*, 9(5), pp. 849–869. doi:10.1177/1461444807081230",
     "link": "https://doi.org/10.1177/1461444807081230"
+  },
+  "wrightGovernmentrunOnlineDiscussion2006": {
+    "author": "Wright",
+    "year": "2006",
+    "inline": "(Wright, 2006)",
+    "harvard": "Wright, S. (2006) ‘Government-Run Online Discussion Fora: Moderation, Censorship and the Shadow of Control1’, *The British Journal of Politics and International Relations*, 8(4), pp. 550–568. doi:10.1111/j.1467-856x.2006.00247.x",
+    "link": "https://doi.org/10.1111/j.1467-856x.2006.00247.x"
   },
   "wuPrivacyFreeSpeech2022": {
     "author": "Wu",

@@ -1285,6 +1285,7 @@ async function renderBeeswarm({ csv, groupField, hostSel, controls, figId }) {
   const selS = controls.sortSel    ? document.getElementById(controls.sortSel)    : null;
   const selL = controls.langSel    ? document.getElementById(controls.langSel)    : null;
   const selM = controls.mediaSel   ? document.getElementById(controls.mediaSel)   : null;
+  const selC = controls.countrySel ? document.getElementById(controls.countrySel) : null;
   const selQ = controls.searchSel  ? document.getElementById(controls.searchSel)  : null;
   const tabs = controls.tabsRoot   ? document.querySelector(controls.tabsRoot)    : null;
 
@@ -1309,24 +1310,25 @@ async function renderBeeswarm({ csv, groupField, hostSel, controls, figId }) {
     selL.value = "ALL";
     selL.addEventListener("change", () => render());
   }
-  // Medium dropdown — every distinct Media category found in any row's
-  // "Media categories" column (pipe-separated multi-value field).
-  if (selM && !selM.options.length) {
-    const allMedia = new Set();
+  // Helper for the multi-valued pipe-separated dropdowns (Medium, Country).
+  function populateMultiSelect(sel, col, allLabel) {
+    if (!sel || sel.options.length) return;
+    const vals = new Set();
     all.forEach(r => {
-      const v = (r["Media categories"] || "").trim();
+      const v = (r[col] || "").trim();
       if (!v) return;
       v.split("|").forEach(m => {
         const t = m.trim();
-        if (t) allMedia.add(t);
+        if (t) vals.add(t);
       });
     });
-    const codes = [...allMedia].sort();
-    selM.add(new Option("All media", "ALL"));
-    codes.forEach(m => selM.add(new Option(m, m)));
-    selM.value = "ALL";
-    selM.addEventListener("change", () => render());
+    sel.add(new Option(allLabel, "ALL"));
+    [...vals].sort().forEach(m => sel.add(new Option(m, m)));
+    sel.value = "ALL";
+    sel.addEventListener("change", () => render());
   }
+  populateMultiSelect(selM, "Media categories", "All media");
+  populateMultiSelect(selC, "Countries",        "All countries");
 
   const getYears = controls.yearInputs
     ? setupYearRange(controls.yearInputs[0], controls.yearInputs[1], all, () => render())
@@ -1353,11 +1355,15 @@ async function renderBeeswarm({ csv, groupField, hostSel, controls, figId }) {
     });
   }
 
+  function inMultiCol(r, col, v) {
+    return (r[col] || "").split("|").some(x => x.trim() === v);
+  }
   function subset() {
     const p  = sel1 ? sel1.value : null;
     const ty = selT ? selT.value : "ALL";
     const lg = selL ? selL.value : "ALL";
     const md = selM ? selM.value : "ALL";
+    const cn = selC ? selC.value : "ALL";
     const q  = (selQ ? selQ.value : "").trim().toLowerCase();
     const tokens = q ? q.split(/\s+/).filter(Boolean) : [];
     const [lo, hi] = getYears();
@@ -1365,8 +1371,8 @@ async function renderBeeswarm({ csv, groupField, hostSel, controls, figId }) {
       (!p || r[controls.primaryField] === p) &&
       (ty === "ALL" || (r.Type || "").toUpperCase() === ty) &&
       (lg === "ALL" || (r.Language || "und") === lg) &&
-      (md === "ALL" ||
-        (r["Media categories"] || "").split("|").map(s => s.trim()).includes(md)) &&
+      (md === "ALL" || inMultiCol(r, "Media categories", md)) &&
+      (cn === "ALL" || inMultiCol(r, "Countries", cn)) &&
       inRange(r, lo, hi) &&
       matchesQuery(r, tokens));
   }
@@ -2329,6 +2335,7 @@ window.addEventListener("DOMContentLoaded", async () => {
         sortSel:    "bee-sort-select",
         langSel:    "bee-lang-select",
         mediaSel:   "bee-media-select",
+        countrySel: "bee-country-select",
         searchSel:  "bee-search",
         tabsRoot:   "#fig-beeswarm-topics .seg",
         yearInputs: ["bt-y0", "bt-y1"],
@@ -2344,6 +2351,7 @@ window.addEventListener("DOMContentLoaded", async () => {
         sortSel:    "bee-cm-sort-select",
         langSel:    "bee-cm-lang-select",
         mediaSel:   "bee-cm-media-select",
+        countrySel: "bee-cm-country-select",
         searchSel:  "bee-cm-search",
         tabsRoot:   "#fig-beeswarm-cm .seg",
         yearInputs: ["bc-y0", "bc-y1"],
