@@ -2,17 +2,17 @@ Quantity,Discipline,Topic,Sub-topic
 379,history_book_history,Censorship,(none)
 297,communication_media_studies,Content moderation,Moderation as a component of platform governance
 185,communication_media_studies,Content moderation,Moderation as the cultivation of a democratic public sphere
-182,public_policy_governance,Content moderation,Moderation as a component of platform regulation
-152,arts_literary_cultural_studies,Censorship,(none)
+181,public_policy_governance,Content moderation,Moderation as a component of platform regulation
+151,arts_literary_cultural_studies,Censorship,(none)
 114,communication_media_studies,Content moderation,Moderation as a component of platform regulation
 113,communication_media_studies,Content moderation,Moderation and censorship
 112,communication_media_studies,Censorship,(none)
 97,communication_media_studies,Content moderation,Moderation as the enforcement of community norms and identity
-77,censorship_studies,Censorship,(none)
+75,censorship_studies,Censorship,(none)
 73,law_legal_studies,Content moderation,Moderation as a component of platform regulation
 59,computer_science_ai,Censorship,(none)
 52,political_science_ir,Censorship,(none)
-51,sociology_anthropology,Censorship,(none)
+52,sociology_anthropology,Censorship,(none)
 49,communication_media_studies,Content moderation,Moderating extremism
 45,communication_media_studies,Debate management,(none)
 40,communication_media_studies,Content moderation,Moderation as industrial labour
@@ -21,8 +21,8 @@ Quantity,Discipline,Topic,Sub-topic
 21,computer_science_ai,AI alignment,(none)
 20,public_policy_governance,Censorship,(none)
 15,computer_science_ai,Content moderation,Moderation as a component of platform governance
-15,computer_science_ai,Content moderation,Moderation as a component of platform regulation
 15,political_science_ir,Content moderation,Moderation as a component of platform regulation
+14,computer_science_ai,Content moderation,Moderation as a component of platform regulation
 14,political_philosophy,Censorship,(none)
 11,communication_media_studies,AI alignment,(none)
 10,censorship_studies,Content moderation,Moderation and censorship
@@ -33,9 +33,9 @@ Quantity,Discipline,Topic,Sub-topic
 9,public_policy_governance,Content moderation,Moderation and censorship
 8,communication_media_studies,Content moderation,Other
 8,computer_science_ai,Content moderation,Moderation as the cultivation of a democratic public sphere
-8,computer_science_ai,Content moderation,Other
 8,science_technology_studies,Censorship,(none)
 7,communication_media_studies,Content moderation,Debate management
+7,computer_science_ai,Content moderation,Other
 7,history_book_history,Political moderation,(none)
 7,law_legal_studies,Censorship,(none)
 7,philosophy_ethics,Debate management,(none)

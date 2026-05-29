@@ -1,11 +1,11 @@
 Language,LanguageName,Country,Items
-en,English,United States,608
+en,English,United States,607
 pt,Portuguese,Brazil,279
 fr,French,France,202
-en,English,(unspecified),188
-en,English,China,183
+en,English,(unspecified),186
+en,English,China,182
 en,English,United Kingdom,175
-en,English,European Union,174
+en,English,European Union,173
 en,English,Germany,166
 it,Italian,Italy,144
 en,English,France,96
@@ -13,16 +13,16 @@ es,Spanish,Spain,96
 it,Italian,European Union,93
 en,English,Russia,85
 en,English,India,83
-en,English,Australia,75
+en,English,Australia,74
 pt,Portuguese,United States,72
 en,English,Canada,71
 it,Italian,United States,67
-en,English,Brazil,63
+en,English,Brazil,62
 en,English,Italy,62
 pt,Portuguese,European Union,57
 fr,French,(unspecified),55
 en,English,Iran,52
-it,Italian,(unspecified),51
+it,Italian,(unspecified),50
 fr,French,United States,49
 en,English,Turkey,48
 pt,Portuguese,Portugal,40
@@ -84,7 +84,6 @@ fr,French,Belgium,12
 fr,French,China,12
 it,Italian,United Kingdom,12
 und,undetermined,France,12
-und,undetermined,United States,12
 en,English,Bahrain,11
 en,English,Belarus,11
 en,English,Denmark,11
@@ -92,6 +91,7 @@ en,English,Norway,11
 en,English,Uganda,11
 es,Spanish,(unspecified),11
 pt,Portuguese,France,11
+und,undetermined,United States,11
 en,English,Cuba,10
 en,English,Estonia,10
 en,English,Finland,10
@@ -142,7 +142,6 @@ fr,French,Philippines,6
 fr,French,Portugal,6
 pt,Portuguese,Italy,6
 und,undetermined,(unspecified),6
-und,undetermined,Germany,6
 en,English,Africa,5
 en,English,Cambodia,5
 en,English,Czech Republic,5
@@ -156,6 +155,7 @@ es,Spanish,United Kingdom,5
 fr,French,England,5
 pt,Portuguese,Russia,5
 und,undetermined,China,5
+und,undetermined,Germany,5
 en,English,Afghanistan,4
 en,English,Armenia,4
 en,English,Burma,4
@@ -179,7 +179,6 @@ it,Italian,India,4
 it,Italian,Japan,4
 pt,Portuguese,Canada,4
 und,undetermined,Spain,4
-und,undetermined,United Kingdom,4
 en,English,Angola,3
 en,English,Cameroon,3
 en,English,Ecuador,3
@@ -214,6 +213,7 @@ pt,Portuguese,Myanmar,3
 pt,Portuguese,Philippines,3
 und,undetermined,Brazil,3
 und,undetermined,European Union,3
+und,undetermined,United Kingdom,3
 de,German,France,2
 en,English,Americas,2
 en,English,Ancient Rome,2

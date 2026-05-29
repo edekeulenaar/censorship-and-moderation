@@ -4,10 +4,10 @@ Automated or algorithmic content moderation,AI,5
 Automated or algorithmic content moderation,Video sharing platform,5
 Automated or algorithmic content moderation,Messaging platform,3
 Automated or algorithmic content moderation,News media,2
-Automated or algorithmic content moderation,News aggregator,1
-Automated or algorithmic content moderation,Wikis,1
 Automated or algorithmic content moderation,Decentralized social media,1
 Automated or algorithmic content moderation,Online fora,1
+Automated or algorithmic content moderation,News aggregator,1
+Automated or algorithmic content moderation,Wikis,1
 Moderating extremism,Social media platform,59
 Moderating extremism,Video sharing platform,32
 Moderating extremism,Messaging platform,15
@@ -15,9 +15,9 @@ Moderating extremism,Search engine,10
 Moderating extremism,Alt-tech,9
 Moderating extremism,Imageboard,7
 Moderating extremism,Print media,5
-Moderating extremism,Russian social media platform,3
-Moderating extremism,AI,3
 Moderating extremism,Platforms,3
+Moderating extremism,AI,3
+Moderating extremism,Russian social media platform,3
 Moderation and censorship,Social media platform,141
 Moderation and censorship,Video sharing platform,44
 Moderation and censorship,Search engine,37
@@ -38,25 +38,25 @@ Moderation as a component of platform governance,Platforms,16
 Moderation as a component of platform governance,Decentralized social media,16
 Moderation as a component of platform governance,Alt-tech,14
 Moderation as a component of platform governance,ISP,10
-Moderation as a component of platform regulation,Social media platform,377
+Moderation as a component of platform regulation,Social media platform,375
 Moderation as a component of platform regulation,Video sharing platform,167
-Moderation as a component of platform regulation,Search engine,129
+Moderation as a component of platform regulation,Search engine,128
 Moderation as a component of platform regulation,Messaging platform,73
-Moderation as a component of platform regulation,Platforms,58
-Moderation as a component of platform regulation,ISP,40
+Moderation as a component of platform regulation,Platforms,57
+Moderation as a component of platform regulation,ISP,39
 Moderation as a component of platform regulation,AI,33
 Moderation as a component of platform regulation,E-commerce,25
 Moderation as a component of platform regulation,Wikis,19
 Moderation as a component of platform regulation,App store,13
+Moderation as brand safety and the commercial viability of the platform,Video sharing platform,1
 Moderation as brand safety and the commercial viability of the platform,Alt-tech,1
 Moderation as brand safety and the commercial viability of the platform,Social media platform,1
-Moderation as brand safety and the commercial viability of the platform,Video sharing platform,1
 Moderation as industrial labour,Social media platform,42
 Moderation as industrial labour,Video sharing platform,18
 Moderation as industrial labour,Search engine,9
 Moderation as industrial labour,Platforms,4
-Moderation as industrial labour,AI,3
 Moderation as industrial labour,E-commerce,3
+Moderation as industrial labour,AI,3
 Moderation as industrial labour,Messaging platform,3
 Moderation as industrial labour,Crowdsourcing platform,2
 Moderation as industrial labour,Imageboard,2
@@ -66,8 +66,8 @@ Moderation as the cultivation of a democratic public sphere,Online fora,50
 Moderation as the cultivation of a democratic public sphere,Print media,37
 Moderation as the cultivation of a democratic public sphere,Video sharing platform,36
 Moderation as the cultivation of a democratic public sphere,Messaging platform,22
-Moderation as the cultivation of a democratic public sphere,News media,18
 Moderation as the cultivation of a democratic public sphere,Search engine,18
+Moderation as the cultivation of a democratic public sphere,News media,18
 Moderation as the cultivation of a democratic public sphere,Online learning platform,15
 Moderation as the cultivation of a democratic public sphere,AI,13
 Moderation as the cultivation of a democratic public sphere,Deliberation platform,11
@@ -78,16 +78,16 @@ Moderation as the enforcement of community norms and identity,Online fora,11
 Moderation as the enforcement of community norms and identity,Video sharing platform,10
 Moderation as the enforcement of community norms and identity,Decentralized social media,7
 Moderation as the enforcement of community norms and identity,Online community,4
-Moderation as the enforcement of community norms and identity,Imageboard,3
-Moderation as the enforcement of community norms and identity,Video game,3
-Moderation as the enforcement of community norms and identity,News aggregator,3
-Other,Social media platform,17
-Other,Messaging platform,4
+Moderation as the enforcement of community norms and identity,AI,3
+Moderation as the enforcement of community norms and identity,Mailing list,3
+Moderation as the enforcement of community norms and identity,Print media,3
+Other,Social media platform,16
 Other,AI,3
 Other,Video sharing platform,3
-Other,Search engine,2
+Other,Messaging platform,3
 Other,Wikis,2
-Other,Text,1
-Other,Image,1
+Other,Search engine,2
+Other,Adult content platform,1
 Other,Video,1
-Other,ISP,1
+Other,Image,1
+Other,Text,1

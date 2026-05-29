@@ -1,4 +1,11 @@
 {
+  "acetoInternetCensorshipDetection2015": {
+    "author": "Aceto and Pescapé",
+    "year": "2015",
+    "inline": "(Aceto and Pescapé, 2015)",
+    "harvard": "Aceto, G. and Pescapé, A. (2015) ‘Internet Censorship Detection: A Survey’, *Computer Networks*, 83, pp. 381–421. doi:10.1016/j.comnet.2015.03.008",
+    "link": "https://doi.org/10.1016/j.comnet.2015.03.008"
+  },
   "allanBenchmarkPoliteness2016": {
     "author": "Allan",
     "year": "2016",
@@ -26,6 +33,13 @@
     "inline": "(Andioc, 1975)",
     "harvard": "Andioc, R. (1975) ‘La Raquel de Huerta y la censura’, *Hispanic Review*, 43(2), pp. 115. doi:10.2307/472548",
     "link": "https://doi.org/10.2307/472548"
+  },
+  "aryanInternetCensorshipIran": {
+    "author": "Aryan et al.",
+    "year": "n.d.",
+    "inline": "(Aryan et al., n.d.)",
+    "harvard": "Aryan, S., Aryan, H. and Halderman, J. A. (n.d.) ‘Internet Censorship in Iran: A First Look’.",
+    "link": ""
   },
   "audranForumQuoiBon2005": {
     "author": "Audran",
@@ -82,6 +96,13 @@
     "inline": "(Carmi, n.d.)",
     "harvard": "Carmi, E. (n.d.) ‘The Hidden Listeners: Regulating the Line from Telephone Operators to Content Moderators’.",
     "link": ""
+  },
+  "cookTwoTypesSelfCensorship2013a": {
+    "author": "Cook and Heilmann",
+    "year": "2013",
+    "inline": "(Cook and Heilmann, 2013)",
+    "harvard": "Cook, P. and Heilmann, C. (2013) ‘Two Types of Self-Censorship: Public and Private’, *Political Studies*, 61(1), pp. 178–196. doi:10.1111/j.1467-9248.2012.00957.x",
+    "link": "https://doi.org/10.1111/j.1467-9248.2012.00957.x"
   },
   "darntonCensorshipComparativePerspective1994": {
     "author": "Darnton",
@@ -299,6 +320,13 @@
     "inline": "(McIntosh, 2020)",
     "harvard": "McIntosh, J. (2020) ‘Maledictive Language: Obscenity and Taboo Words’, in J. Stanlaw (ed.) *The International Encyclopedia of Linguistic Anthropology*. Wiley, pp. 1–9. doi:10.1002/9781118786093.iela0248",
     "link": "https://doi.org/10.1002/9781118786093.iela0248"
+  },
+  "merkleEmileZolaDevant2007": {
+    "author": "Merkle",
+    "year": "2007",
+    "inline": "(Merkle, 2007)",
+    "harvard": "Merkle, D. (2007) ‘\\'Emile Zola devant la censure victorienne’, *TTR : traduction, terminologie, rédaction*, 7(1), pp. 77–91. doi:10.7202/037169ar",
+    "link": "https://doi.org/10.7202/037169ar"
   },
   "morettiDistantReading2013": {
     "author": "Moretti",
