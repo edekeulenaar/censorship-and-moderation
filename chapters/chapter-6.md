@@ -128,22 +128,22 @@ How do these policies compare to users’ discussions about problematic speech? 
 
 In **Figure 3**, one can see similar fluctuations in meaning in what commenters associated to "unacceptability" over time. At first, commenters point to *unacceptable issues*, beginning with the same "consistent extremes" identified in early YouTube policies: "murder", killing "innocent lives", "barbaric" and "cruel" crimes, "violence", its "viciousness", violence committed by "islamic" movements, "terrorist groups" or "sponsored terrorists". 
 
-![](images/Figure%203.png)
+![](images/ch6-figure-3.png)
 **Figure 3**. Frequently mentioned phrases in YouTube comments mentioning the term "unacceptable", 2004-2022. "Constant extremes" highlighted. ^figure-3
 
 Comments then move from discussing *unacceptable issues* to *unacceptable speech*, beginning with "racism", "blasphemy", "abusevely insulting" someone, "anti-gay bigotry", "discrimination" or "discriminating", speech referring to "gay" people or "gender", "racial profiling" (**Figure 4**). 
 
-![](images/Figure%204.png)
+![](images/ch6-figure-4.png)
 **Figure 4**. Frequently mentioned phrases in YouTube comments mentioning the term "unacceptable", 2004-2022. "Violent language" highlighted. ^figure-4
 
 From 2014, refer to speaking about one's "skin color", "divison and hate", "locker room talk" (likely in reference to Trump Access tapes), "anti semitism" and "slurs" (**Figure 5**).
 
-![](images/Figure%205.png)
+![](images/ch6-figure-5.png)
 **Figure 5**. Frequently mentioned phrases in YouTube comments mentioning the term "unacceptable", 2004-2022. Misinformation highlighted. ^figure-5
 
 From 2011, we see evidence of users discussing not how others ought or ought not to speak, but unacceptable ways of moderation speech itself. Some refer to "free speech" and "Internet chaos"; free speech becomes a more discussed topic in 2017, and from 2019 some critique the fact of "interrupting" or "shouting at opponents"; the "refusal" and "concealed censorship" of "mainstream" media with regards to opposite points of views; the tendency for debates to be managed by it; the circumstances or plausibility of "safe" or "risk spaces"; "censorship" at "university classroooms"; the "usage of language" and its links with "behaviour" (**Figure 6**).  
 
-![](images/Figure%206.png)
+![](images/ch6-figure-6.png)
 **Figure 6**. Frequently mentioned phrases in YouTube comments mentioning the term "unacceptable", 2004-2022. Speech moderation highlighted. ^figure-6
 
 Progressively, we see a shift in discussions about *unacceptable issues*, to *unacceptable speech*, to *unacceptable ways of moderating speech*; or, at which what is unacceptable is each other’s speech moderation. This can be seen in discussions about how to deal with hate speech (**Figure 7**). Naturally, the age-old US debate on where to delineate the boundaries of hate and free speech is evident, here, too. While some consider hate speech to be a "free" or "protected" speech, others express concern about its presence in the platform ("hate speech is a real thing") or illegality ("hate speech is illegal for services in the us"). 
