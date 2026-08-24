@@ -74,12 +74,12 @@ Zooming into authoritative and audience claims on the efficacy of hydroxychloroq
 
 The same can be said about modes of transmission. In the early months of the pandemic, authoritative sources and their audiences usually referred to different modes of COVID-19 transmission. Audiences do focus on modes of transmission mentioned by authoritative sources: (respiratory) droplets, close contact, community spread, coughing, sneezing and touch. Here, too, authoritative sources act as debunkers: 5G is dismissed at least twice after gaining considerable traction among audiences in March.
 
-![Figure 4](images/Figure%204.png)
+![Figure 4](images/images-Figure%204.png)
 **Figure 4**. *Heatmap of modes of transmission mentioned by authoritative sources (Tweets and websites) and their Twitter audiences (Tweet replies and mentions of website domains by authoritative sources (e.g., "[whitehouse.gov](https://www.google.com/url?q=http://whitehouse.gov&sa=D&source=editors&ust=1707917247172585&usg=AOvVaw2twpeykb3L3eXYIxsZcUYh)")). ^figure-4
 
 The caveat, here, is that audiences continue to focus on modes of transmission disputed among authoritative sources (see [[#^figure-4|Figure 4]]). With little scientific consensus on the minutiae of droplet transmissions, there is notable public confusion on the airborne nature of the virus [@achenbachStudiesLeaveQuestion2020; @lewisCoronavirusAirborneExperts2020; @mandavilli239ExpertsOne2020]. The World Health Organisation expresses uncertainty about airborne transmission throughout February, then later joins the U.S. Centers for Disease Control and Prevention in March to affirm that it spreads mainly via droplets. Only in April 2020 does the CDC offer a verdict: "according to experts", it says, "the virus can be transmitted by both droplets and smaller, 'aerosol' types of particles" [@centersfordiseasecontrolandpreventionHealthcareProfessionalsFrequently2020]. While the World Health Organisation rejects this claim, a slight majority of users echo the CDC's statement well until October.
 
-![Figure 5](images/Figure%205.png)
+![Figure 5](images/images-Figure%205.png)
 **Figure 5**. *Line graph of audience and authoritative statements about whether COVID-19 is airborne or not. ^figure-5
 
 In this context, audiences express a relatively constant amount of uncertainty throughout, as well as conspiratorial suspicions in early March. While this is especially applicable to the months of February and March, audiences appear to express a relatively constant amount of claims aligned with the majority of authoritative sources. This may suggest that more consensus between authoritative sources could foster consensus among their publics.
@@ -168,86 +168,6 @@ Twitter audience responses contain a large number of retweets of claims made by 
 ## Moderation data
 
 Moderation status and labels for the 4.2 million relevant Tweets (i.e., by authoritative sources or audiences, and containing any of our keywords) were gathered using web scraping (Selenium).
-
-# Bibliography
-
-Achenbach, J., & Johnson, C. Y. (2020, April 30). Studies leave question of ‘airborne’ coronavirus transmission unanswered. Washington Post. https://www.washingtonpost.com/health/2020/04/29/studies-leave-question-airborne-coronavirus-transmission-unanswered/
-
-Bordia, P., & Difonzo, N. (2004). Problem Solving in Social Interactions on the Internet: Rumor As Social Cognition. Social Psychology Quarterly, 67(1), 33–49. https://doi.org/10.1177/019027250406700105
-
-Borra, E., & Rieder, B. (2014). Programmed method: Developing a toolset for capturing and analyzing tweets. Aslib Journal of Information Management, 66(3), 262–278. https://doi.org/10.1108/AJIM-09-2013-0094
-
-Bostrom, A., Joslyn, S., Pavia, R., Walker, A. H., Starbird, K., & Leschine, T. M. (2015). Methods for Communicating the Complexity and Uncertainty of Oil Spill Response Actions and Tradeoffs. Human and Ecological Risk Assessment: An International Journal, 21(3), 631–645. https://doi.org/10.1080/10807039.2014.947867
-
-Caplow, T. (1946). Rumors in War Departmental Contributions: Teaching and Research in the Social Sciences. Social Forces, 25(3), 298–302. https://heinonline.org/HOL/P?h=hein.journals/josf25&i=314
-
-Centers for Disease Control and Prevention. (2020, April 1). Healthcare Professionals: Frequently Asked Questions and Answers | CDC. Centers for Disease Control and Prevention. https://web.archive.org/web/20200401051025/https://www.cdc.gov/coronavirus/2019-ncov/hcp/faq.html
-
-Chu, J., & McDonald, J. (2020, January 29). Helping the world find credible information about novel #coronavirus. Twitter. https://blog.twitter.com/en_us/topics/company/2020/authoritative-information-about-novel-coronavirus
-
-Dailey, D., & Starbird, K. (2015). “It’s Raining Dispersants”: Collective Sensemaking of Complex Information in Crisis Contexts. Proceedings of the 18th ACM Conference Companion on Computer Supported Cooperative Work & Social Computing, 155–158. https://doi.org/10.1145/2685553.2698995
-
-Dwoskin, E. (2020, November 12). Trump’s attacks on election outcome prolong tech’s emergency measures. Washington Post. https://www.washingtonpost.com/technology/2020/11/12/facebook-ad-ban-lame-duck/
-
-Iati, M., Kornfield, M., O’Grady, S., & Mellen, R. (2020, May 4). Trump says it’s safe to reopen states, while Birx finds protesters with no masks or distancing ‘devastatingly worrisome.’ Washington Post. https://www.washingtonpost.com/world/2020/05/03/coronavirus-latest-news/
-
-Internet Archive. (2021). Internet Archive: Digital Library of Free & Borrowable Books, Movies, Music & Wayback Machine [Web-based]. Internet Archive. https://archive.org/
-
-Keulenaar, E. de, Burton, A. G., & Kisjes, I. (2021). Deplatforming, demotion and folk theories of Big Tech persecution. Fronteiras - Estudos Midiáticos, 23(2), 118–139. https://doi.org/10.4013/fem.2021.232.09
-
-Kou, Y., Gui, X., Chen, Y., & Pine, K. (2017). Conspiracy talk on social media: Collective sensemaking during a public health crisis. Proceedings of the ACM on Human-Computer Interaction, 1(CSCW), 61. https://doi.org/10.1145/3134696
-
-Krafft, P., Zhou, K., Edwards, I., Starbird, K., & Spiro, E. S. (2017). Centralized, Parallel, and Distributed Information Processing during Collective Sensemaking. Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems, 2976–2987. https://doi.org/10.1145/3025453.3026012
-
-Lee, L., & Oppong, F. (2020, September 1). Adding more context to Trends. Twitter Blog. https://blog.twitter.com/en_us/topics/product/2020/adding-more-context-to-trends
-
-Lewis, D. (2020). Is the coronavirus airborne? Experts can’t agree. Nature, 580(7802), 175–175. https://doi.org/10.1038/d41586-020-00974-w
-
-Lyons, K. (2020, October 11). Twitter flags, limits sharing on Trump tweet about being ‘immune’ to coronavirus. The Verge. https://www.theverge.com/2020/10/11/21511682/twitter-disables-sharing-trump-tweet-coronavirus-misinformation
-
-Mandavilli, A. (2020, July 4). 239 Experts With One Big Claim: The Coronavirus Is Airborne. The New York Times. https://www.nytimes.com/2020/07/04/health/239-experts-with-one-big-claim-the-coronavirus-is-airborne.html
-
-O’Leary, N. (2020, March 10). How Dutch false sense of security helped coronavirus spread. The Irish Times. https://www.irishtimes.com/news/world/europe/how-dutch-false-sense-of-security-helped-coronavirus-spread-1.4199027
-
-Roth, Y., & Pickels, N. (2020, May 11). Updating our approach to misleading information. Twitter Blog. https://blog.twitter.com/en_us/topics/product/2020/updating-our-approach-to-misleading-information
-
-Scheufele, D. A., & Krause, N. M. (2019). Science audiences, misinformation, and fake news. Proceedings of the National Academy of Sciences, 116(16), 7662–7669. https://doi.org/10.1073/pnas.1805871115
-
-Schmitt, C. (2005). Political theology: Four chapters on the concept of sovereignty (University of Chicago Press). University of Chicago Press.
-
-Shibutani, T. (1966). Improvised News: A Sociological Study of Rumor. Ardent Media.
-
-Skopeliti, C., & John, B. (2020, March 19). Coronavirus: How are the social media platforms responding to the “infodemic”? [Journalism]. First Draft. https://firstdraftnews.org:443/latest/how-social-media-platforms-are-responding-to-the-coronavirus-infodemic/
-
-Starbird, K. (2012). Crowdwork, crisis and convergence: How the connected crowd organizes information during mass disruption events [PhD].
-
-Starbird, K. (2020, April 27). How to cope with an infodemic. Brookings. https://www.brookings.edu/techstream/how-to-cope-with-an-infodemic/
-
-Starbird, K., Spiro, E., Edwards, I., Zhou, K., Maddock, J., & Narasimhan, S. (2016). Could This Be True? I Think So! Expressed Uncertainty in Online Rumoring. Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems, 360–371. https://doi.org/10.1145/2858036.2858551
-
-The Economist. (2019, June 8). Google rewards reputable reporting, not left-wing politics. The Economist. https://www.economist.com/graphic-detail/2019/06/08/google-rewards-reputable-reporting-not-left-wing-politics
-
-The YouTube Team. (2019, January 25). Continuing our work to improve recommendations on YouTube. Blog.Youtube. https://blog.youtube/news-and-events/continuing-our-work-to-improve/
-
-Twitter. (2019, October 15). World Leaders on Twitter: Principles & approach. Twitter Blog. https://blog.twitter.com/en_us/topics/company/2019/worldleaders2019
-
-Twitter. (2020a, February 7). Synthetic and manipulated media policy. Twitter. https://web.archive.org/web/20200207000218/https://help.twitter.com/en/rules-and-policies/manipulated-media
-
-Twitter. (2020b, April). Coronavirus: Staying safe and informed on Twitter. Coronavirus: Staying Safe and Informed on Twitter. https://blog.twitter.com/en_us/topics/company/2020/covid-19
-
-Twitter. (2020c, May 11). Coronavirus: Staying safe and informed on Twitter (May 11 2020). Coronavirus: Staying Safe and Informed on Twitter. https://blog.twitter.com/en_us/topics/company/2020/covid-19
-
-Twitter. (2020d, December 16). COVID-19 misleading information policy (December 16 2020). Twitter. https://web.archive.org/web/20201216200114/https://help.twitter.com/en/rules-and-policies/medical-misinformation-policy
-
-Twitter. (2021, January 8). Permanent suspension of @realDonaldTrump. Twitter Blog. https://blog.twitter.com/en_us/topics/company/2020/suspension
-
-Yong, E. (2020, April 29). Why the Coronavirus Is So Confusing. The Atlantic. https://www.theatlantic.com/health/archive/2020/04/pandemic-confusing-uncertainty/610819/
-
-YouTube. (2020). COVID-19 Medical Misinformation Policy—YouTube Help. https://support.google.com/youtube/answer/9891785?hl=en
-
-Zeeuw, D. de, Hagen, S., Peeters, S., & Jokubauskaite, E. (2020). Tracing normiefication: A cross-platform analysis of the QAnon conspiracy theory. First Monday, 25(11). https://doi.org/10.5210/fm.v25i11.10643
-
----
 
 # Annex
 

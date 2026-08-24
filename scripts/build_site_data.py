@@ -99,7 +99,11 @@ def build_manifest() -> None:
     whose number falls in its range, then back matter + a generated
     References entry."""
     global THESIS_MANIFEST, SRC_TO_SLUG
-    files = {p.name for p in MANUSCRIPT_DIR.glob("*.md")}
+    # Editor backups ("Chapter 1. … .backup-2026-08-19-2345.md") sit next to the
+    # real sources and match the chapter/part patterns below, so without this
+    # filter a backup can silently win the slot for its chapter.
+    files = {p.name for p in MANUSCRIPT_DIR.glob("*.md")
+             if ".backup" not in p.name.lower()}
 
     chapters: dict[int, tuple[str, str]] = {}   # num → (filename, title)
     parts: dict[int, tuple[str, str]] = {}      # num → (filename, title)
@@ -147,9 +151,8 @@ def build_manifest() -> None:
     SRC_TO_SLUG = {src: slug for slug, _k, src, _t in manifest if src}
 
 # NOTE: "Censorship and moderation: the oscillations of a contested practice"
-# is CHAPTER 1's title, not the thesis title. The full thesis title below is
-# provisional — keep the "(provisional title)" marker until the author settles it.
-THESIS_TITLE = "The way speech functions: content moderation across contested public spheres"
+# is CHAPTER 1's title, not the thesis title.
+THESIS_TITLE = "Dialogue and restraint: Content moderation across contested public spheres"
 THESIS_SUBTITLE = "Provisional title"
 THESIS_AUTHOR = "Emillie de Keulenaar"
 
@@ -254,7 +257,89 @@ _IMG_EXT     = (".png", ".jpg", ".jpeg", ".gif", ".webp", ".svg",
 # `Manuscript/images/` plus the shared `Figures/` folder newer chapters use).
 VAULT_IMAGE_DIRS = [MANUSCRIPT_DIR / "images", MANUSCRIPT_DIR.parent / "Figures"]
 SITE_IMAGES  = Path(__file__).resolve().parent.parent / "images"
-_referenced_images: set[str] = set()      # basenames to copy at sync time
+
+# Image bookkeeping, filled while rewriting each chapter:
+#   _image_site_name  resolved vault path → filename to use under site/images/
+#   _site_name_taken  that filename → the vault path that claimed it
+#   _missing_images   (basename, raw src, chapter) we could not resolve
+_image_site_name: dict[str, str] = {}
+_site_name_taken: dict[str, str] = {}
+_missing_images: set[tuple] = set()
+_current_src_file = ""                    # chapter being rewritten (for reports)
+
+
+def _resolve_vault_image(src: str):
+    """Resolve an image reference the way Obsidian does.
+
+    An explicit relative path ("Figures/Figure 3.png") is tried against the
+    VAULT ROOT first and then the Manuscript folder; a bare filename is looked
+    up in VAULT_IMAGE_DIRS. Returns the resolved Path, or None."""
+    s = _unquote(src).strip()
+    if "/" in s:
+        for base in (MANUSCRIPT_DIR.parent, MANUSCRIPT_DIR):
+            p = base / s
+            if p.exists():
+                return p.resolve()
+    name = s.split("/")[-1]
+    for d in VAULT_IMAGE_DIRS:
+        p = d / name
+        if p.exists():
+            return p.resolve()
+    return None
+
+
+def _site_image_name(src: str) -> str:
+    """Pick a UNIQUE filename under site/images/ for one image reference.
+
+    site/images/ is flat, but the vault is not: several chapters have their own
+    "Figure 3.png" living in different folders (Manuscript/images/ vs the shared
+    Figures/). Flattening on basename alone silently gave one chapter another
+    chapter's figure. The first source to claim a basename keeps it; any DIFFERENT
+    source file that wants the same basename gets its vault folder prefixed."""
+    real = _resolve_vault_image(src)
+    name = _unquote(src).strip().split("/")[-1]
+    if real is None:
+        _missing_images.add((name, src, _current_src_file))
+        return name                        # leave the link; sync reports the gap
+    key = str(real)
+    if key in _image_site_name:            # already mapped (same file reused)
+        return _image_site_name[key]
+    chosen = name
+    if name in _site_name_taken:           # collision with a DIFFERENT file
+        stem, dot, ext = name.rpartition(".")
+        folder = re.sub(r"[^A-Za-z0-9]+", "-", real.parent.name).strip("-").lower()
+        chosen = f"{folder}-{name}"
+        n = 2
+        while chosen in _site_name_taken:
+            chosen = f"{folder}-{stem}-{n}{dot}{ext}"
+            n += 1
+    _site_name_taken[chosen] = key
+    _image_site_name[key] = chosen
+    return chosen
+
+
+# Per-chapter reference lists: every citation is consolidated into the site's
+# References page, so the chapter-level lists (in a half-dozen different
+# citation styles) are dropped when mirroring.
+_REF_HEAD = re.compile(
+    r"^#{1,4}\s*\**\s*(primary\s+references|secondary\s+references|references"
+    r"|bibliography|works\s+cited)\s*\**\s*$", re.I)
+_ANY_HEAD_LINE = re.compile(r"^#{1,6}\s+\S")
+
+
+def strip_reference_sections(text: str) -> str:
+    """Remove any trailing per-chapter References/Bibliography section."""
+    lines = text.splitlines()
+    out, i, n = [], 0, len(lines)
+    while i < n:
+        if _REF_HEAD.match(lines[i].strip()):
+            i += 1
+            while i < n and not _ANY_HEAD_LINE.match(lines[i].strip()):
+                i += 1
+            continue
+        out.append(lines[i])
+        i += 1
+    return "\n".join(out).rstrip() + "\n"
 
 
 def rewrite_links(text: str) -> str:
@@ -296,9 +381,7 @@ def rewrite_links(text: str) -> str:
         low = src.lower()
         if (low.endswith(_IMG_EXT) and
                 not src.startswith(("http://", "https://", "images/", "data:"))):
-            name = _unquote(src).split("/")[-1]
-            _referenced_images.add(name)
-            out.append(f"images/{_quote(name)}")
+            out.append(f"images/{_quote(_site_image_name(src))}")
         else:
             out.append(src)
         out.append(")")
@@ -327,7 +410,10 @@ def sync_thesis() -> None:
         if src:
             p = MANUSCRIPT_DIR / src
             if p.exists():
-                body = rewrite_links(p.read_text(encoding="utf-8"))
+                global _current_src_file
+                _current_src_file = src
+                body = rewrite_links(
+                    strip_reference_sections(p.read_text(encoding="utf-8")))
                 (SITE_CHAPTERS / f"{slug}.md").write_text(body, encoding="utf-8")
                 n_copied += 1
                 if slug == "chapter-1":
@@ -386,23 +472,26 @@ def sync_thesis() -> None:
     # ones chapters actually use — the vault folder is far larger). Chapter-1
     # live-figure placeholders (fig-*.png) are already committed there.
     SITE_IMAGES.mkdir(parents=True, exist_ok=True)
-    n_img = n_img_missing = 0
-    unresolved = []
-    for name in sorted(_referenced_images):
-        src = next((d / name for d in VAULT_IMAGE_DIRS if (d / name).exists()),
-                   None)
-        dst = SITE_IMAGES / name
-        if src:
-            if not dst.exists() or src.stat().st_mtime > dst.stat().st_mtime:
-                _sh.copy2(src, dst)
-            n_img += 1
-        elif not dst.exists():
-            n_img_missing += 1
-            unresolved.append(name)
-    print(f"  images: {n_img} referenced copied/present "
-          f"({n_img_missing} unresolved)")
-    if unresolved:
-        print("    unresolved: " + ", ".join(unresolved[:12]))
+    n_img = n_renamed = 0
+    for real, name in sorted(_image_site_name.items(), key=lambda kv: kv[1]):
+        src, dst = Path(real), SITE_IMAGES / name
+        if (not dst.exists()
+                or dst.stat().st_size != src.stat().st_size
+                or src.stat().st_mtime > dst.stat().st_mtime):
+            _sh.copy2(src, dst)
+        n_img += 1
+        if name != src.name:
+            n_renamed += 1
+    print(f"  images: {n_img} copied/present"
+          + (f" ({n_renamed} renamed to avoid a basename clash)"
+             if n_renamed else ""))
+    for name, key in sorted(_site_name_taken.items()):
+        if Path(key).name != name:
+            print(f"    · {name}  ←  {key.replace(str(MANUSCRIPT_DIR.parent), '~vault')}")
+    if _missing_images:
+        print(f"  ⚠ {len(_missing_images)} image(s) referenced but NOT found in the vault:")
+        for name, _src, chapter in sorted(_missing_images):
+            print(f"    · {name}   (in {chapter})")
 
 
 # ─── Main ─────────────────────────────────────────────────────────────────────
