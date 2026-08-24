@@ -63,11 +63,7 @@ This brings to question the nature of *frontiers* in a platform. Platforms are c
 
 Moderation policies, as alluded in [Chapter 6. Moderation in crisis](#/chapter-6), tend to transform frontiers into borders. Enforced rules and techniques act as stricter delimiters, marking the platform’s extent and internal identity; they enact what scholars call “boundary work” [@matiasCivicLaborVolunteer2019, 2-4]: an "inner-oriented" demarcation that affirms the cohesion of the platform’s normative order [@kristofNatureFrontiersBoundaries1959, 272]. At the core of these boundaries is a "jural law" acting as a “formal verbalization and particularization of the moral standards of a given socio-political order” [@kristofNatureFrontiersBoundaries1959, 257]. From it, moderation determines the normative possibilities of speech, and thus of what circulates within. 
 
-With increased enforcement, however, borders (ironically) become contested "points of contact" from which content and users transgress and return across a network of more or less moderated spaced. 
-
-[...]
-
-In other words, enforcement generates further exchange [@sarafFrontiers2020, 1] moved by normative tensions. Policy boundaries hold coherence internally, but at the edges — particularly where they are the object of fundamental disagreement — they become “spaces of indeterminancy and volatility” (ibid) that end up forming newer, counter, or competing territories. This also applies internally: Twitter, for example, remodelled itself in the image of that which had once been excluded.
+With increased enforcement, however, borders (ironically) become contested "points of contact" from which content and users transgress and return across a network of more or less moderated spaced. In other words, enforcement generates further exchange [@sarafFrontiers2020, 1] moved by normative tensions. Policy boundaries hold coherence internally, but at the edges — particularly where they are the object of fundamental disagreement — they become “spaces of indeterminancy and volatility” (ibid) that end up forming newer, counter, or competing territories. This also applies internally: Twitter, for example, remodelled itself in the image of that which had once been excluded.
 
 ## **Conclusion**
 
