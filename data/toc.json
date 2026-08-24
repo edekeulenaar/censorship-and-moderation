@@ -1,15 +1,9 @@
 {
 "title": "Dialogue and restraint: Content moderation across contested public spheres",
-"subtitle": "Provisional title",
+"subtitle": "",
 "author": "Emillie de Keulenaar",
 "fullPdfUrl": "pdf/thesis.pdf",
 "entries": [
-{
-"slug": "acknowledgments",
-"kind": "front",
-"title": "Acknowledgments",
-"src": "Acknowledgments.md"
-},
 {
 "slug": "abstract",
 "kind": "front",
@@ -150,7 +144,6 @@
 }
 ],
 "srcToSlug": {
-"Acknowledgments.md": "acknowledgments",
 "Abstract.md": "abstract",
 "Introduction.md": "introduction",
 "Part I. What is moderation?.md": "part-1",

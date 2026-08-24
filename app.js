@@ -3237,7 +3237,9 @@ async function renderLanding() {
       return window.marked ? window.marked.parse(t) : t;
     } catch { return ""; }
   }
-  const [abstract, ack] = await Promise.all([md("abstract"), md("acknowledgments")]);
+  // Acknowledgments are not published; the cover shows the abstract only.
+  const abstract = await md("abstract");
+  const ack = "";
   // Split the title at its colon: a serif main line + a Test-National descriptor.
   const tParts = (TOC?.title || "").split(/:\s*/);
   const tMain = tParts[0] || "";
@@ -3257,7 +3259,7 @@ async function renderLanding() {
       <h1 class="cover-title">
         <span class="ct-main">${escapeHtml(tMain)}</span>${tDesc ? `<span class="ct-desc">${escapeHtml(tDesc)}</span>` : ""}
       </h1>
-      <p class="cover-sub">${escapeHtml(TOC?.subtitle || "")}</p>
+      ${TOC?.subtitle ? `<p class="cover-sub">${escapeHtml(TOC.subtitle)}</p>` : ""}
       <p class="cover-author">${escapeHtml(TOC?.author || "")}</p>
     </header>
     ${abstract ? `<section class="cover-abstract"><h2>Abstract</h2>${abstract}</section>` : ""}
