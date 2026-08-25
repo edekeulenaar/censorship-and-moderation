@@ -1,5 +1,4 @@
-# **Chapter 2** 
-# After deplatforming: the return of trace research for the study of content moderation 
+# Chapter 2. After deplatforming
 
 When platforms were considered ‘intermediaries’, or conduits through which content flows unfettered [@kleisnielsenDealingDigitalIntermediaries2018], they could serve as sites for the study of user traces: online actions and behaviours interactively registered by the platforms and made available to researchers in the form of hit logs, links, likes, retweets, shares and so forth. One could observe user behaviour and attitude unobtrusively, as if ‘in the wild’ [@webbUnobtrusiveMeasuresNonreactive1966]. These measures would provide insights into collective mood and sentiments, give indicators of opinion and perhaps even capture animal spirits behind stock price or currency movements [@lazerNetworksPoliticalAttitudes2008; @lazerComputationalSocialScience2020; @wattsInfluentialsNetworksPublic2007](Lazer et al., 2008, 2020; Watts and Dodds, 2007).
 
@@ -21,7 +20,7 @@ In these examples, trace research gains a new purpose. It seeks to answer, at le
 
 In what follows, we first acknowledge the methodological relevance of other forms of trace research, such as censorship studies, to the kind of research proposed above. We then outline methods and use cases for the study of content moderation through trace research for the study of platform effects. These include content moderation policy research; reconstructing instances of content removal, flagging and demotion; and capturing user strategies for content moderation evasion. These methods are supported by work-in-progress tools we have made available for programmatic research, which we dub “MCAT”, or Moderation Capture and Analysis Toolkit [@dekeulenaarMCATModerationCapture2024]. We then conclude with a discussion on the significance of (empirical) content moderation research, be it for scholars invested in digital methods or platform governance, or others tracing the modulation of speech norms in social media environments. In doing so, we also report on limitations, some of which pertain to any kind of reconstructive (web) research [@aroraUsingWaybackMachine2016], while others are due to the growing pains of ‘post-API’ research [@perriamDigitalMethodsPostAPI2020].
 
-# Censorship studies and other precedents of trace research
+## Censorship studies and other precedents of trace research
 
 Perhaps because they observe a similar phenomenon, doing trace research on content moderation is a craft inevitably steeped into various historical equivalents, the most obvious of which is the study of censorship in literature and communication sciences. Central to these studies is also a form of trace research: an attempt at uncovering the norms, types, traces and effects of managing public speech in written, spoken and visual form [@mooreCensorship2016a].
 
@@ -36,7 +35,7 @@ Each component of this “moderation stack” will be detailed in what follows.
 ![Figure 1](images/Moderation%20stack-01.png)
 **Figure 1**. *The moderation stack.* ^figure-1
 
-# Content moderation policy analysis
+## Content moderation policy analysis
 
 Until now, the most popular method for the study of content moderation relies on what is chiefly available for empirical inquiry: content moderation policies and related documentation. In this context, content moderation policies have been examined as ‘performative’ attempts by platforms to signal legislators and advertisers of their grip on an emerging public scandal [@hillDefinitelyNotBusiness2024], particularly after the so-called ‘techlash’ of 2018 [@theeconomistTechlashAmazonFacebook2018]. Others may study policies as primary materials for histories of concepts, techniques or ‘platform mechanisms’ related to content moderation (Van Dijck et al., 2018). And others may systematically archive platform policies as primary sources for a variety of platform histories, particularly platform governance [@katzenbachPlatformGovernanceArchives2023].
 
@@ -50,7 +49,7 @@ Second, policies often describe how problematic content is moderated, again with
 
 In combining all of the information inferred from a policy document – queries for data collection, collected data and moderation traces – we go on to study the general process of content moderation within broader platform events. Each of the above-mentioned steps are detailed below.
 
-## Collecting policy data
+### Collecting policy data
 
 One of the first questions to pose when analysing moderation policies concerns the scale of issue and the documents to select. One may wish to retrace the moderation of specific content (electoral misinformation) or a larger issue (harassment or harm). One could select corresponding policy documents (e.g., Twitter’s Electoral Integrity or Abusive behaviour policies), but quickly notice that policies will have merged or changed titles and content, making it impossible to construct a linear genealogy. Twitter’s ‘Hateful conduct’ and ‘Abusive behaviour’, for example, have morphed from relatively neutral ideas of ‘technical harm’ (such as spam or ‘technical abuse’) into various types of social abuse. Some content has become less and less tolerated over the years, while other kinds simply had their reach ‘limited’ (see [Chapter 8. Twitter as an accidental authority](#/chapter-8)).
 
@@ -60,7 +59,7 @@ There are ways to collect policies manually, though they are not always straight
 
 We can also use the Link Ripper to crawl the internal links of policy-related pages found in Wayback links of a platform domain, though the large quantity of results may make this task difficult. In [Chapter 13.  Modulating moderation](#/chapter-13), scraping in- and out-links from all archived twitter.com links resulted in 20,731 archived links for 31 unique policy pages. Besides specific policies like Hateful Conduct and Abusive Behaviour, results included blog posts announcing policy updates that may not always be written into formal policy documents (ibid). In practice, this meant using the Wayback Machine Link Ripper to collect the archived URLs of a platform homepage (e.g., twitter.com), and then crawling those URLs to find internal policy links. In doing so, one can also record the amount of changes made to each policy version, including by using textdiff functions available on MCAT [@dekeulenaarMCATModerationCapture2024]. Before diving into the content of each policy, these results already display the changing structure of a platform’s policy organisation, and therefore some of the company’s internal organisational changes.
 
-## Understanding what a platform finds problematic
+### Understanding what a platform finds problematic
 
 In what follows, we can examine platform policies with either a distant or close reading approach. A distant reading is quantitative, consisting in analysing the amount of changes one or several policy documents have undergone by number of edits (per day, month, year) or the length of those edits (in the form of a word, a sentence, parts of the graphical UI, such as a chunk of HTML code, and so on). Number of edits can amount to ‘textdiff’ or ‘difflib’ counts, a built-in Python module that allows users to compare data sets, such as daily instances of archived policies. The results, visualised in the form of a line, Gantt or any other chart, can indicate resource investment per policy or the larger issues a platform has sought to address. One example for YouTube is [Figure 2](#^figure-2). In it, we see significant changes in 2018 (following the introduction of the Santa Clara principles) as well as a ‘complexification’ [@passmannHealthyCommunitiesToxic2023b] of content moderation into a myriad of case-specific policies.
 
@@ -77,7 +76,7 @@ On Prompt Compass, one could upload text policy in a CSV format for systematic p
 
 A manual and more meticulous way of collecting such information consists in reading every policy, extracting and placing specific components from the text into a repository, such as a spreadsheet. How to go about this procedure depends on the structural consistency of the policy documentation. Given their quasi-legal nature, policy documents are written in somewhat predictable ways; they open with a rationale for why they are enforced and continue with what is not tolerated and the corresponding sanctions, i.e., enforcement techniques. If there has been little change over time, one may consider using an automated technique to highlight the changes, such as counting the number of times a word is mentioned in policies over time (e.g., ‘suspend’). However, because policies may be written in a variety of different ways, they would in most cases undertake a manual annotation of key sections of a policy.
 
-For each policy version – per day, month, year or other timeframe – one retains a policy category (‘Twitter Rules & Policies’); its name (‘Abusive behaviour’), prohibited content(s)(‘Unwanted sexual advances’, etc.); examples, if applicable (‘Solicitation of sexual acts’); and the enforcement techniques assigned to each content. The result can be summarised in a spreadsheet which contains the material needed for a systematic analysis to trace the evolution (conceptual or otherwise) of a given type of objectionable content and moderation technique, as illustrated in [[^figure-3|Figure 3]] and [4](#^figure-4).
+For each policy version – per day, month, year or other timeframe – one retains a policy category (‘Twitter Rules & Policies’); its name (‘Abusive behaviour’), prohibited content(s)(‘Unwanted sexual advances’, etc.); examples, if applicable (‘Solicitation of sexual acts’); and the enforcement techniques assigned to each content. The result can be summarised in a spreadsheet which contains the material needed for a systematic analysis to trace the evolution (conceptual or otherwise) of a given type of objectionable content and moderation technique, as illustrated in [[#^figure-3|Figure 3]] and [4](#^figure-4).
 
 ![Figure 3](images/Figure%202.png)
 **Figure 3**. *List of accepted and prohibited content in Twitter/X Community Guidelines (2022–2024). Results obtained using GPT-4-1160-Preview with a non-specified number of completion tokens and temperature set to 0.001.* ^figure-3
@@ -85,7 +84,7 @@ For each policy version – per day, month, year or other timeframe – one reta
 ![Figure 4](images/Figure%2022.4%20new.png)
 **Figure 4**. *List of accepted and prohibited content in Truth Social Community Guidelines (2023). Results obtained using GPT-4-1160-Preview with a non-specified number of completion tokens and temperature set to 0.001.* ^figure-4
 
-## Query design and dynamic archiving
+### Query design and dynamic archiving
 
 Having studied the contents of policy documents, we have been able to determine what the platform considers to be problematic, how it defines problematic content over time (and in the context of socio-political events) and what enforcement techniques (and thereby degrees of sanctioning) applied to each. It gives researchers a sense of each platform’s ‘history of discipline’. It informs us about what has come to be intolerable and perhaps why, and the kind of language that begins to disappear (or be ‘shadowed’) from the platform under stricter enforcement conditions.
 
@@ -95,28 +94,28 @@ Once queries are designed, data collection may begin. We call this process ‘dy
 
 Dynamic archiving must adapt to different platform access regimes. It could once be done on X with the Twitter Capture and Analysis Toolkit (TCAT) [@borraProgrammedMethodDeveloping2014] if a user retained API access, or with a scraper if not. The fact that TCAT collected Tweets daily allowed one to create contemporaneous data archives of ‘running’ Tweet moderation. With this archive, one could later find which Tweets had been removed by comparing the statuses of present-day and archived Tweets, together with their engagement, ranking and other relevant metadata. The equivalent process can be done on YouTube with youtube-dl [@garciagonzalezYoutubedl2022], an open-source command-line program used for scraping content and metadata, including channel names, channel IDs, video IDs, video comments, video transcripts, engagement (views, likes and dislikes), search result rankings and video status (e.g., ‘This video has been removed due to copyright.’). One can set it up to collect this information by numbers of hours, days or months. API-based alternatives are the YouTube Data Tools [@riederYouTubeDataTools2019]; for Facebook and Instagram, CrowdTangle; and for smaller platforms data collection via multi-platform data collection tools, such as 4CAT [@peeters4CATCaptureAnalysis2018].
 
-# Reconstruction the scene of content moderation 
+## Reconstruction the scene of content moderation 
 
 What one chooses to capture with any one of these tools depends on the moderation technique under analysis. There are at least three types of techniques from which to derive metadata: labelling, suspension or removal (‘deplatforming’), and demotion. We will outline each of these below.
 
-## Removal and suspension
+### Removal and suspension
 
 Traces of deplatforming may be found via platform APIs or user interfaces. As of June 2023, there are Github repositories that look for user statuses with user_lookup and other functions [@bruno78BasicTwitterApi2016]. But these functions usually do not specify the reasons why content has been removed, returning instead information about a post or user being online or not. More specific statuses include prompts in YouTube video thumbnails, such as ‘This video has been removed for infringing the hate speech policy’, or disclaimers in Tweets and/or users one tries but fails to access: ‘Sorry, this post is no longer available!’. To collect these, one can set up a web scraper, such as Selenium, to extract the specific sections containing the page status of a post, user, channel or video (see, for example, MCAT scrapers). The users or posts no longer available can be captured through dynamic archiving and comparing older and newer versions of a dataset, whereupon one will note that some content is no longer available. Once that content is identified, their statuses can be scraped from their pages.
 
 In some cases – particularly on X – content and user removals may not be definite. As noted above, several policies stipulate that suspensions can be temporary or permanent, depending on the severity of a violation. These more intermittent forms of deplatforming invite a continuous tracing of post and user removals. One can keep scraping the status of a selection of posts, in chosen intervals, and find that some posts that were initially online were later suspended and then back online again, or vice versa.
 
-## Removal and Suspension
+### Removal and Suspension
 
 By ‘deplatforming’, one refers to the temporary or permanent expulsion of content or users from a given platform. On X, deplatforming may refer to the temporary or permanent suspension of users, or the removal of posts. On YouTube channels and videos may be suspended under a conditional ‘strike system’, which places suspensions for one or more weeks depending on the infringement. We also find that channels are demonetised prior to removal (which may arguably count as a type of deplatforming) or are removed altogether. Specific videos may no longer be available for a variety of policy infringements.
 
-## Labels
+### Labels
 
-The strategy to scrape content or user statuses also can be used to collect content labels. Labels were used especially during the times of the COVID-19 pandemic and Twitter’s World Leaders policies [[#^figure-5|Figure 5]] to add nuance or context to ‘misleading’ information, particularly by users with political mandates (such as ex-US President Donald Trump), or Tweets whose ‘misleading’ statements may become more or less acceptable depending on external circumstances, such as the development of ‘authoritative’ knowledge on the COVID-19 virus. Above, we mentioned that labels may change over time, particularly when the policy instating them is suspended. In this case, one can use an automated scraper to collect post, video or post labels every so often, and then compare them over time. An interesting metric for comparing labels is engagement and rankings, as the late Twitter tended to deactivate sharing and up-ranking some types of labelled content [cit: Twitter's enforcement-options / visibility-filtering policy page — same source as the (Twitter, 2017) reference in Chapter 8; no key for it exists yet].
+The strategy to scrape content or user statuses also can be used to collect content labels. Labels were used especially during the times of the COVID-19 pandemic and Twitter’s World Leaders policies [[#^figure-5|Figure 5]] to add nuance or context to ‘misleading’ information, particularly by users with political mandates (such as ex-US President Donald Trump), or Tweets whose ‘misleading’ statements may become more or less acceptable depending on external circumstances, such as the development of ‘authoritative’ knowledge on the COVID-19 virus. Above, we mentioned that labels may change over time, particularly when the policy instating them is suspended. In this case, one can use an automated scraper to collect post, video or post labels every so often, and then compare them over time. An interesting metric for comparing labels is engagement and rankings, as the late Twitter tended to deactivate sharing and up-ranking some types of labelled content.
 
 ![Figure 5](images/Figure%2022.5.png)
 **Figure 5.** *Content moderation policy collection, annotation and subsequent query design.* ^figure-5
 
-## Demotion
+### Demotion
 
 Demotion may refer to reducing the visibility of problematic content in user interfaces in a variety of ways, depending on the platform. YouTube describes demotion as up-ranking or ‘raising’ authoritative content in search results, including news media and other trusted institutional sources (YouTube, 2021b). It also claims that ‘borderline contents’ are buried in search and recommendation results intentionally (YouTube, 2019). X claims that problematic posts may be ranked downwards in search results and replies, and may no longer appear in promotional emails or feeds, or be shared among users (Twitter, 2017). Regardless of their specific methods, both platforms aim to downrank problematic content using two principal metrics: visibility and engagement.
 
@@ -124,35 +123,35 @@ These two metrics are found in API documentation or user interfaces in slightly 
 
 To examine X demotion (or a consequence of such), one can compare the rankings of posts in search and reply rankings over time, since demotion consists in hiding or down-ranking posts in order to reduce engagement in problematic content. To do so, rankings, engagement and post content can be collected with a scraper every so often. An example can be found on MCAT.
 
-## Contextualisation
+### Contextualisation
 
 The final step in this procedure is to contextualise instances of labelling, deplatforming or demotion. The idea is to understand how policy implementations were made in the context of external or online events. The researcher can refer to the information extracted from relevant platform policies and date the implementations of enforcement measures in their case studies. Here, for example, we can keep track of all the updates of YouTube’s hate speech (and related) policies to make sense of which content from a dataset of political videos was targeted, and when.
 
 ![Figure 6](images/Figure%2022.6.png)
 **Figure 6**. *Reverse-engineering content moderation practices.*
 
-# Capturing user effects
+## Capturing user effects
 
 What can one look for when examining moderation-related ‘user effects’? To date, some have documented a few ways in which users seek to obfuscate keywords that may have them banned, such as out-linking their accounts or controversial content to alternative platforms [@rogersDeplatformingFollowingExtreme2020], or countering suspicions of ‘shadowbanning’ with content optimisation techniques ([Chapter 12. Deplatforming, demotion and folk theories of Big Tech persecution](#/chapter-12)). First, we will focus on methods to trace how users ‘replatform’ banned content to alternative platforms, and link them back to their original accounts. Then we will discuss a method to detect ways in which users obfuscate compromising keywords, and, finally, examine how users interpret content moderation.
 
-## Links to alternative platforms
+### Links to alternative platforms
 
 In datasets containing data susceptible to moderation, one will often find traces of users seeking to guide their audiences toward lesser moderated alternatives like BitChute, Rumble or Telegram. One of the ways to find such traces is to filter URLs from one’s dataset, particularly in locations where they are used as promotional content. On YouTube, these may be a channel’s profile or video descriptions, while on X – until December 2022 [@mehtaTwitterBansPosting2022] – they had been a user’s profile description. One can visualise results in the form of an alluvial diagram, showing the ‘source’ platform – where the user is posting from – to a ‘target’ platform – where the platform is redirecting their audiences. For example, YouTube channels involved in COVID-19 conspiracies between April and October 2020 linked to a variety of alternative platforms [@scottBigTechsTrying2021]. In other cases, users link to alternative platforms to point to content that cannot be hosted in more moderated ones. In [Figure 7](#^figure-7), for example, we see how users involved in the Brazilian Congress riots of 8 January 2023, frequently linked evidence of electoral fraud and strategies to invade Brasilia’s congressional square to Telegram channels and ‘backup’ information hosting sources, including Google Docs.
 
 ![Figure 7](images/Figure%2022.7.png)
 **Figure 7**. *120 URLs with most engagement in social media posts about the Brazilian elections of 2022–2023.* ^figure-7
 
-## Keyword obfuscation
+### Keyword obfuscation
 
 Keyword obfuscation consists in altering a compromising term to prevent platforms from automatically detecting and sanctioning one’s content. Examples have been found throughout the COVID-19 pandemic, when users were compelled to use more discrete expressions of distrust concerning the nature of the virus and official guidelines for protection [@tutersDeepStatePhobia2022a]. One way to find such expressions is to use natural language processing, particularly word2vec [@goldbergWord2vecExplainedDeriving2014]. Word2vec is a machine learning technique that, provided with a large enough dataset (or at least one million rows), can find terms that are used in the same or similar context as a given query.
 
-## Mining for user comments on moderation
+### Mining for user comments on moderation
 
 To examine how users interpret content moderation, one can filter a dataset with mentions of platforms or synonyms and execute a series of analyses that provide a ‘distant’ or ‘close’ reading of results. Some of these ‘distant reading’ devices are word trees – a graphical version of keyword-in-contexts [@wattenbergWordTreeInteractive2008] — and subject-verb-object sentence graphs [@milajevsIRMeetsNLP2015]. In an example outlined below user comments were extracted using the following keywords: ‘deplatform*’, ‘shadowbann*’, ‘demot*’, ‘demonetis*’ or ‘demonetiz*’, ‘suspend*’, ‘remov*’, ‘cancel*’, ‘modera*’, and ‘banned’. One way to visualise results is to paste all extracted sentences into a word tree and select a platform name as a root sentence.
 
 A more complex method, informed by [@tangherliniAutomatedPipelineDiscovery2020], is to use an ensemble of combined natural language processing techniques that consist in extracting syntactic and semantic elements of conspiracy theories from ‘noisy’ social media posts and visualise them as storytelling networks. In one case, we reconstruct subject-verb-object relations by extracting the relations between named entities, filtering relations based on their reference to conspiratorial narratives and then filtering resulting networks based on their relationship to COVID-19 conspiracy themes. We can do this by implementing a Python word2vec library [@Word2vecWrapperGoogle], which maps the n-grammatical relations between words through neural networking algorithms. As above, basic subjects include ‘youtube’, ‘google’, ‘big tech’, ‘facebook’ and ‘twitter’, while verbs are associated to moderation.
 
-# Conclusions: the return of trace research
+## Conclusions: the return of trace research
 
 Trace research, or the deployment of data from user activity on platforms as indicators of societal trends and sentiment, has been critiqued because of the manner in which platforms boost content and thereby ‘manage user behaviour’ [@qinUserBehaviorRetrieval2020]. Platforms have a vested interest in shaping the way its users interact with content, for they benefit from greater engagement and longer watch times. Traces also suffer from other platform effects such as content demotion and user suspension or removal. On top of that, users, for their part, may engage in reputation engineering practices such as the acquisition of fake followers or content placement optimisation driven by analytics as well as SEO (search engine optimisation) practices. They may obfuscate their interests through the use of code words and manipulated images as well as privacy controls that set posts and accounts to private. All of these measures deplete the value of the traces left behind by users and taken up by researchers.
 
@@ -163,3 +162,6 @@ We discuss five approaches to the study of content moderation through trace rese
 In all, these approaches make use of traces of the effects of content moderation on platform data. They seek to make visible practices of content demotion and removal as well as user suspension and deplatforming. They capture outward markers, such as flags. They show how users affect content availability through techniques that obfuscate or redirect audiences to alternative spaces. Each of these approaches may be deployed to study content moderation in its own right, or, as said, to gauge its impact on the trace data that is left for researchers to study societal trends and sentiment.
 
 <div class="page-break" style="page-break-before: always;"></div>
+
+
+<div class="page-break"></div>

@@ -1,5 +1,4 @@
-# **Chapter 10**
-# Platform ruptures and the formation of online counter spheres
+# Chapter 10. Platform ruptures and the formation of online counter spheres
 
 From 4chan to Truth Social, “alt-tech” spheres are not new spaces, but they have nevertheless challenged the view that the Web has consolidated around only a handful of increasingly hegemonic social media platforms. Since 2018, different approaches to content moderation — together with profoundly contentious debates about the nature of political speech norms — have produced a more refracted ecosystem, where “alt-tech” platforms have emerged as both alternatives and competitors to dominant spaces. This constitutes a paradoxical situation because, until very recently, users inhabited a thoroughly “platformised” environment [@helmondPlatformizationWebMaking2015]: a landscape marked by the hegemony of a small number of platforms that operated with broadly similar moderation norms. They are today confronted with the fragmentation of these same places into a multiplicity of competing and ideologically differentiated spaces.
 
@@ -13,7 +12,7 @@ Despite their fragmentation, what binds these alternative spaces conceptually? T
 
 To illustrate this process, this chapter takes a distant reading approach to reconstruct a brief history of major normative ruptures that have given rise to alt-tech spheres across the Web, including cloud hosts, the blogging sphere, wikis, social media, messaging applications, and LLMs. It then compares the normative and technical affordances of selected social media spaces — namely Twitter, X and Truth Social. In doing so, it highlights how these spaces, despite their competition, coexist and complement one another’s normative and technical limitations. I conclude with considerations for the importance of consensus-building mechanisms around content moderation as speech norms, given that platforms still rely on their legitimacy as (nominal) spaces for public debate. 
 
-## **The infrastructure of speech affordances**
+### **The infrastructure of speech affordances**
 
 By the time of their inception — particularly Gab and Voat's — alt-tech platforms have mostly been described by their infrastructure. An early example is Donovan's (2018) metaphor of “parallel ports” (a reference to early hardware solutions that allowed multiple streams of data to flow simultaneously) to explain how alt-tech sites function as spaces where deplatformed content flows in complementary parallel to mainstream platforms. In this sense, speech affordances are simultaneously normative and infrastructural: they define the conditions under which information is hosted and circulated while shaping the architectures that sustain those conditions. Alt-tech is therefore not about the absence of moderation but about _competing_ moderation [@siaperaAltTechPublic2023, 456].
 
@@ -23,7 +22,7 @@ Critics lament that such infrastructures erode the “rational critical digital 
 
 Defining what constitutes acceptable speech in these infrastructures is less about the substance of utterances than about their friction with normative boundaries. Pohjonen and Udupa (2017) describe this as the extent to which speech collides with the “boundaries of acceptable norms of public culture.” A comparison between Twitter and Truth Social, or between Twitter before and after its transformation into X, shows how platforms with near-identical interfaces and infrastructures diverge in their normative orientation. While Truth Social is built upon Mastodon’s open-source infrastructure, its values are framed in explicit opposition to those of Twitter, and yet the two remain complementary. In this sense, alt-tech is not about inventing radically new affordances but about duplicating existing ones while reconfiguring the speech norms that govern them. These duplicated infrastructures both mirror and contest their predecessors, creating parallel but normatively distinct counter-spheres.
 
-## Alt-tech as counter-spheres
+### Alt-tech as counter-spheres
 
 The question of what counts as an “alternative platform” has been answered in different but complementary ways. Some emphasise that alt-tech is about speech. Zuckerman and Rajendra-Nicolucci (2021) define alt-tech as a term referring to platforms that promise uncensored expression, while cultivating a broad sense of grievance that speech has been “censored” for failing to be “politically correct”. Others highlight that alt-tech is about affordances. Rogers (2020) characterises these spaces as destinations for “deplatformed social media celebrities”, endowed with more attractive features such as the private sociality of Telegram. Together, these perspectives suggest that alt-tech combines both speech and affordances in the making of an infrastructure for alternative communication.
 
@@ -31,7 +30,7 @@ In order to understand this dual nature, it is helpful to conceptualise alt-tech
 
 Alt-tech platforms function as counter-spheres in this precise sense. Public spheres are structured by speech norms, the conventions and rules that determine what can and cannot be said. These norms are operationalised in moderation policies, codes of conduct and wider cultures, which together constitute speech affordances — capacities for expression that “accommodate some expressive modes and not others” (Fraser, 1991). Yet speech norms are “essentially contested” (de Laat, 2012) and subject to constant “discursive contestation” (Fraser, 1991). When disagreements over norms intensify, platforms may excommunicate content or users, while excluded users may create new spaces for themselves. This dynamic leads to what Siapera (2023, 463) terms a “hyperfragmentation” of the public sphere. In such contexts, counter-spheres embody alternative speech affordances, functioning as subterfuges that provide release from contradictory or only semi-internalised norms. Subterraneity can be found both in actual spaces — gay pubs, fetish dungeons, far-right locales — and in language itself. For example, the word “immigrant” can conceal repressed meanings; in the Dutch context, it may implicitly refer to Muslims, showing how contested language itself constitutes a counter-spheric practice.
 
-# **The formation of alt-tech counter-spheres**
+## **The formation of alt-tech counter-spheres**
 
 Alt-tech platforms tend to emerge from epistemic or normative ruptures with their host environments. Continuous deliberation over speech norms can culminate in disagreements so deep that they become intractable. Such moments may lead to self-exile, when users voluntarily depart, or to forced exile, when users are deplatformed. In either case, the rupture becomes the generative event for alternative spaces. What distinguishes these ruptures is not merely their procedural form, but the fact that disagreement cannot be absorbed or resolved within the platform’s prevailing order of norms. They mark points at which the public sphere of a given platform becomes unsustainable for certain groups, creating the demand for competing or parallel arenas.
 
@@ -39,7 +38,7 @@ This dynamic can be conceptualised as a “platform rupture”. By this, I mean 
 
 Rupture is typically followed by exile, whether voluntary or imposed. Exiled communities often attempt to recreate the functions of the platforms they left, while reconfiguring them around different speech norms. For instance, when contributors are banned from Wikipedia, they may fork the database to create alternative wikis that preserve or amend contested versions of content. Yet even within these forks, disagreements frequently persist, generating further splits and new competing projects. In this sense, exile is rarely the endpoint. Instead, it sets in motion cycles of fragmentation in which alternative spaces reproduce both the contentions and the affordances of their predecessors, thereby reinforcing the pattern of hyperfragmentation described by Siapera (2023).
 
-## **Alt-tech, then and again: a timeline**
+### **Alt-tech, then and again: a timeline**
 
 Taking a broader perspective, it becomes clear that alt-tech spaces have arisen across many domains of the Web. These include fora and news aggregators, domain registration and cloud services, search engines, messengers, blogs, social media platforms, wikis, and video streaming services. In each of these areas we find competitors (represented by lighter streams in the timeline below) as well as _normative alternatives_ (represented by darker streams). Some alternatives emerged out of disagreements over privacy, as in the cases of Telegram, Signal, DuckDuckGo or MeWe. Others crystallised around conflicts over moderation norms. Still others developed out of geopolitical ruptures, as in the cases of Rutube, Yandex or Ruwiki.
 
@@ -51,13 +50,13 @@ Within the video-streaming sphere, BitChute was founded in 2017 during a wave of
 
 Sometimes, users migrated away from microblogging services altogether, favouring the private and encrypted affordances of messengers such as Telegram or Signal. In the domain of bulletin boards and registrars, similar cycles can be observed. Even in spaces that prided themselves on minimal moderation, disagreements and migrations occurred. Users left 4chan for 8chan in 2013, only to move again to 8kun in 2019 after further controversies. The latter replatforming was made possible when alternative providers such as Epik and the Russian company DDoS-Guard offered services that Cloudflare refused [@balkinFreeSpeechTriangle2018]. Similarly, Telegram has served as a refuge for numerous deplatformed celebrities [@rogersDeplatformingFollowingExtreme2020]. These infrastructural supports illustrate how moderation ruptures often overlap with geopolitical and economic dimensions, producing synergies that sustain the proliferation of alt-tech counter-spheres.
 
-## **The interdependences of mainstream and alt-tech**
+### **The interdependences of mainstream and alt-tech**
 
 As recalled in [Chapter 9. Normative dislocation](#/chapter-9), Telegram, often presented as a space beyond the reach of Western regulators and platform moderation regimes, has functioned as a hub for planning, coordination and discussion. In the case of the Brazilian riots, users relied on Telegram to organise events in extreme detail, circumventing oversight by state authorities and corporate actors. Yet at the same time, information was coded or strategically fragmented messages were released on mainstream platforms — Facebook, Instagram, Twitter — in order to reach larger audiences, without provoking immediate interventions. In this way, the original and more contentious content remained preserved and accessible on Telegram, while fragments disseminated elsewhere scaffolded the meaning in ways that deferred or displaced controversy.
 
 This dynamic produces a form of cross-platform interdependence where alternative and mainstream platforms stand as infrastructures that sustain each other’s circulation of moderated content. The mainstream becomes a distribution channel, extending the reach of the alternative. From Twitter, Facebook and YouTube, users circulated links to GETTR, Telegram, CloutHub, Odysee, Rumble, BitChute, Infowars and the website brazilwasstolen.com, which hosted documents that had been removed by Brazil’s Supreme Federal Court for disinformation, but which remained accessible through VPNs. Alternative spaces may depend on the mainstream for visibility, while mainstream actors themselves cannot fully disentangle from what they have excluded.
 
-## **Platforms, from frontiers to contested borders**
+### **Platforms, from frontiers to contested borders**
 
 This brings to question the nature of *frontiers* in a platform. Platforms are commonly depicted as relatively limitless spaces, with "frontier" meaning “front”, the “foreland”, the “margins” — a space of expansion where boundaries are not yet fully consolidated. Frontiers are directional, suggesting movement towards new territory, the expansion of platformisation and the attraction of new audiences [@kristofNatureFrontiersBoundaries1959, 269–270]. They are the outer edges of spaces that grow by extending themselves further, much like the Westward expansion of states or empires.
 
@@ -65,7 +64,7 @@ Moderation policies, as alluded in [Chapter 6. Moderation in crisis](#/chapter-6
 
 With increased enforcement, however, borders (ironically) become contested "points of contact" from which content and users transgress and return across a network of more or less moderated spaced. In other words, enforcement generates further exchange [@sarafFrontiers2020, 1] moved by normative tensions. Policy boundaries hold coherence internally, but at the edges — particularly where they are the object of fundamental disagreement — they become “spaces of indeterminancy and volatility” (ibid) that end up forming newer, counter, or competing territories. This also applies internally: Twitter, for example, remodelled itself in the image of that which had once been excluded.
 
-## **Conclusion**
+### **Conclusion**
 
 This chapter asked what binds alt-tech spaces conceptually and how they emerge from the platformised Web. The literature has generally answered the first question by describing what makes these spaces alternative: their subcultures and promises of uncensored expression [@AlttechWillDiffuse2020; @zuckermanDeplatformingOurWay2021], their communicative affordances and their attraction to deplatformed users [@rogersDeplatformingFollowingExtreme2020], or the parallel infrastructures that allow excluded content to remain online [@donovanNavigatingTechStack2019]. These accounts identify important features of alt-tech, but they tend to begin after the alternative has already formed.
 
@@ -89,3 +88,6 @@ The implication is not that every form of contested speech must remain unrestric
 
 
 <div class="page-break" style="page-break-before: always;"></div>
+
+
+<div class="page-break"></div>

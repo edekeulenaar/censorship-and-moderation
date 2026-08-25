@@ -33,3 +33,6 @@ Chapter 2 is an collaboration with Richard Rogers. Richard and I wrote the Intro
 This method has since been operationalised into a research tool, MCAT — the Moderation Capture and Analysis Toolkit — developed with Ivan Kisjes, Frank Anemaet and finally Matúš Solčány [@dekeulenaarMCATModerationCapture2024]. The idea behind the tool is to afford the modularity with which moderation techniques and data access regimes change: what can be captured on a given platform in a given year is a moving target, and an instrument for studying moderation has to be able to move with it. Given a YouTube, X, Facebook or whatever dataset obtained from most social media platforms, MCAT looks for traces of removal, flagging, demotion and other metadata found through a combination of platform APIs and web scraping. These are clandestine methods for a clandestine object of study, much like the empirical study of censorship has tended to be.
 
 From here, [Part II. Speech affordances](#/part-2) turns to how speech norms are materialised in the affordances of particular platforms.
+
+
+<div class="page-break"></div>

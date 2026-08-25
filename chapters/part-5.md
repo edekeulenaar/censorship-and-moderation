@@ -1,4 +1,4 @@
-# **Part V. Modulation and consensus**
+# Part V. Modulation and consensus
 
 What, then, can be done when enforcement can exclude speech from a service without settling the disagreement from which it arose? 
 
@@ -17,7 +17,7 @@ The chapter is a journal article co-authored with João Vieira Magalhães and Bh
 | De Keulenaar, E., Magalhães, J.C. and Ganesh, B. (2023) “Modulating moderation: a history of objectionability in Twitter moderation practices,” Journal of Communication, 73(3), pp. 273–287. Available at: https://doi.org/10.1093/joc/jqad015. |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 
-The second movement is towards consensus-building. [Chapter 14. From Twitter to X](#/chapter-14) examines how Community Notes makes agreement between raters the engine of a moderation decision. The platform does not have to adjudicate a disputed claim directly but seeks to afford a process through which users who usually disagree might converge around a moderation decision, i.e., a note. This helps displace arbitrary normative decisions to the sum of agreements between users themselves. Though, of course, X has been far from exempt from accusations of impartiality [cit], the model of moderation proposed here brings several benefits to platform businesses: it sells itself as functioning on consensus-building as the engine of moderation. 
+The second movement is towards consensus-building. [Chapter 14. From Twitter to X](#/chapter-14) examines how Community Notes makes agreement between raters the engine of a moderation decision. The platform does not have to adjudicate a disputed claim directly but seeks to afford a process through which users who usually disagree might converge around a moderation decision, i.e., a note. This helps displace arbitrary normative decisions to the sum of agreements between users themselves. Though, of course, X has been far from exempt from accusations of impartiality, the model of moderation proposed here brings several benefits to platform businesses: it sells itself as functioning on consensus-building as the engine of moderation. 
 
 This is indeed an apparent return to moderation’s dialogical function, now delegated to an architecture and to the crowd. Its logic may also be extended beyond Community Notes: moderation decisions could be organised around the consensus that a system affords rather than around a judgement made by the platform alone. But consensus over a decision is not the same as consensus over the terms on which that decision is discussed. The problem of metamoderation remains: if users are to decide together how speech should be moderated, they must also be able to agree on the terms of their debate. 
 
@@ -27,3 +27,6 @@ The chapter is to be published as part of an edited volume by Richard Rogers and
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 
 Read together, the two chapters describe moderation moving back towards the dialogical, consensus-building function with which this thesis began: the work of holding a plurivocal exchange together, now delegated to architecture and to users. They also leave open whether this movement genuinely recovers that function or only gives its appearance by relocating the labour of adjudication. More fundamentally, they leave unresolved how users might agree not only on particular moderation decisions but on the terms through which those decisions are debated. The Conclusion takes up these questions.
+
+
+<div class="page-break"></div>

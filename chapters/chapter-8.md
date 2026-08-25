@@ -1,5 +1,4 @@
-# **Chapter 8**
-# Twitter as an accidental authority: How a platform assumes an adjudicative role during the COVID-19 pandemic
+# Chapter 8. Twitter as an accidental authority
 
 As new information on the epidemiological nature of COVID-19 infections and its impact on public safety evolves, so do claims on which objective facts constitute it [@yongWhyCoronavirusConfusing2020]. Twitter has been tasked with ensuring that their users maintain a basic level of consensus around public safety guidelines and other information relative to personal and public health by, for example, centralizing access to local health organisations and representatives, flagging and at times deleting "misleading" Tweets that contradict such sources [@skopelitiCoronavirusHowAre2020]. But with diverging guidelines and facts occasionally opposing even authorities — notably ex-U.S. President Trump, the American Centre for Disease Control, the National Institutes of Health and the World Health Organisation — the platform has struggled to determine whom to attribute ultimate authority for reliable information about COVID-19 transmission, treatment and protection.
 
@@ -7,13 +6,13 @@ In this context, we find that English-speaking publics that interact with any of
 
 These findings suggest two main implications. First, Twitter's moderation of authoritative sources renders the platform an authority in its own right, as it ultimately decides which of these authorities can and cannot govern in its platform. Second, COVID-19 has pushed platform moderation of misinformation from detecting and suppressing technically inauthentic contents to information that affects the overall consensus over what constitutes correct information, leading the platform to sanction outliers or "extremes", and shrink its size down to a more homogeneous (and thereby cohesive) public sphere. Both of these implications constitute a few emerging characteristics of a now "post-Trump" Internet.
 
-# Research questions
+## Research questions
 
 1. How did claims by authoritative sources (@realDonaldTrump, @CDC, @NIH, @WHO and @pahowho, the North-American division of the World Health Organisation) on COVID-19 transmission, prevention and treatments diverge with those of their audiences between March and October, 2020?
 2. How did Twitter's content moderation guidelines and techniques for COVID-19 misinformation interfere in these divergences?
 3. How did COVID-19 affect Twitter's overall policies on misinformation?
 
-# "Misinformation" and sense-making
+## "Misinformation" and sense-making
 
 Heads of state, health organizations and the public have been frequently divided on claims around COVID-19, such as whether asymptomatic people and children can contaminate others, whether one should use a mask, or if children can be contagious [@iatiTrumpSaysIts2020; @olearyHowDutchFalse2020]. In this context, governments and public health authorities have struggled to maintain a consensus with their local publics and each other [@starbirdHowCopeInfodemic2020], hurting public trust in their capacities as main references about the pandemic [@bordiaProblemSolvingSocial2004; @bostromMethodsCommunicatingComplexity2015; @starbirdCouldThisBe2016].
 
@@ -25,7 +24,7 @@ Drawing partly from studies on collective sensemaking and rumours [@caplowRumors
 
 We find that the pandemic has pushed Twitter and its platform counterparts to delimit what "misinformation" or other problematic information is, be it in a technical, authoritative or even rhetorical sense. Determining the objective value of statements on COVID-19 treatments, prevention and transmission vehicles, however, is not a responsibility the platform initially embraces. Its preference is to relay that decision to "authoritative sources", a solution already set by other platforms to prioritise authoritative contents as "reputed" or "trustworthy" sources, despite mixed reactions from users suspicious of political bias in favour of left-wing American political culture [@theeconomistGoogleRewardsReputable2019]. This study also shows mixed results. The absence of consensus among authoritative sources makes the 2020 U.S. (and international) crisis of authority on COVID-19 even more evident, with the WHO, CDC, NIV and the White House contradicting one another. The difference, we find, is that in the absence of authority, Twitter steps in as an authority itself.
 
-## Consensus and misinformation in the process of COVID-19 sensemaking: conceptual implications
+### Consensus and misinformation in the process of COVID-19 sensemaking: conceptual implications
 
 A number of misinformation policies and studies have focused on detecting and correcting misinformation by (for example) investing in media literacy and pinpointing factors that can “increase the chances of citizens to be exposed to correct(ive) information” [@scheufeleScienceAudiencesMisinformation2019, 7664]. Strategies include removing false content and demoting false or “borderline” information in favor of authoritative sources (ibid).
 
@@ -33,7 +32,7 @@ A possible drawback of these strategies is the decontextualization of misinforme
 
 In this sense, we join a field of study that approaches misinformation as a dynamic by-product of poor consensus between information providers and recipients — authoritative sources and their audiences — who must in crises “converge” around a common understanding of facts and the epistemic frameworks used to validate them [@scheufeleScienceAudiencesMisinformation2019, 7663; @starbirdCouldThisBe2016, 1]. By pinpointing information that authoritative sources and their audiences mutually ignore and comparing diverging claims related to these terms, we find that authoritative sources and their audiences do not always focus on the same aspects of COVID-19, nor do audiences always rely on the same authoritative sources. For example, audiences mention “5G” and “food” as transmission vectors, while authoritative sources focus on “cough” and “touch”.
 
-## From misinformative to misleading Tweets: how COVID affected Twitter's moderation of "problematic information"
+### From misinformative to misleading Tweets: how COVID affected Twitter's moderation of "problematic information"
 
 Over the course of 2020, Twitter has adapted its anti-misinformation content moderation policies significantly. Twitter's initial approach to managing COVID-19 misinformation on its platform piggy-backed on existing policies that targeted inauthentic user behaviour. In early February 2020, the platform targets COVID misinformation as deceitful contents, or disinformation: doctored footage or photography, or contents forged with the intention to mislead other users (Twitter, 2020). It uses the World Health Organisation as a reference from which to determine whether a Tweet is false or not. This requires heavy-handed, top-down measures to remove Tweets that contradict such authorities before they can spread on the platform.
 
@@ -41,7 +40,7 @@ As the pandemic began to spread globally, however, it became clear that existing
 
 Rather than resorting merely to deletion, it seeks to reinforce a consensus on guidelines and facts about the virus by centralising users' access to COVID information. It wants to ensure that users comment on the virus within delimited epistemic boundaries of what can and cannot be entrusted to be true. The delimitation of those perimeters is an arbitration outsourced to local, legislative and medical authorities: those that are tasked with deciding the truth about the virus. This means pointing users to local authoritative sources' websites on Tweets that mentions the virus, or adding links to national or state-level guidelines on newsfeeds and homepages. These measures — exemplified by the early #KnowTheFacts prompt — would help fill in possible "data voids" [@golebiewskiDataVoidsWhere] between authoritative sources and their audiences.
 
-## Twitter as an accidental authority
+### Twitter as an accidental authority
 
 Still, trouble comes when authoritative sources begin to contradict one another around mask usage, hydroxychloroquine treatments or airborne viral transmission. In such cases, Twitter does not favor one or another public health authority, but does at times moderate authorities that disrupt their overall consensus. Ex-U.S. President Donald Trump's analogies on COVID and seasonal flu, or the merits of hydroxychloroquine-based treatments, contradict and confuse statements by the CDC and NIH. His Tweets are flagged, counter-balanced by resources Twitter recommends users consult instead. Though the first Tweet it suspended was sanctioned for violating its Glorification of Violence policy, Trump's Tweets on COVID are nearly always labelled by default.
 
@@ -49,9 +48,9 @@ The decision to moderate authorities appears to mark a shift between redirecting
 
 Twitter's moderation of existing authorities speaks to a number of foundational concepts of political theory, among which is Carl Schmitt's famed phrase that the "sovereign" is "that which decides the state of exception" [@schmittPoliticalTheologyFour2005]. As consensus wanes among existing authorities in a given body politic and crisis sets in, the one who will hold ultimate authority is that who intervenes and decides for those in this sphere regardless of the legality of their actions. It is not so much Twitter's content moderation policies that legitimise its moderation of authoritative sources, but its very ability to do so regardless of existing conventions.
 
-# Findings
+## Findings
 
-## Authoritative sources and their audiences contradict each other most on undetermined facts, such as COVID-19 treatments
+### Authoritative sources and their audiences contradict each other most on undetermined facts, such as COVID-19 treatments
 
 As may be expected, audiences and authoritative sources diverge most around unconfirmed information. There were no single, confirmed treatments for COVID-19 until the announcement of the Pfizer vaccine in August of 2020. Despite declaring that “no treatment” and “vaccines” were available by January, authoritative sources like the World Health Organisation and the CDC fail to prevent their audiences from contemplating a plethora of treatments ranging from house-grown remedies and specialised medicines (see [Figure 1](#^figure-1)), be it vitamin C, ethanol, zinc or remdesivir.
 
@@ -65,7 +64,7 @@ Elsewhere, authoritative claims also express uncertainty on transmission, treatm
 ![Figure 2](images/Figure%202%203.png)
 **Figure 2**. *Heatmap of authoritative clams on COVID-19 treatments. Purple values count as authoritative debunks of audience claims; blue values indicate instances in which authoritative have framed a given treatment as disputed. Visualisation by Carlo Gaetano.* ^figure-2
 
-## Audiences are divided around contradicting claims by authoritative sources
+### Audiences are divided around contradicting claims by authoritative sources
 
 Zooming into authoritative and audience claims on the efficacy of hydroxychloroquine, we see that audiences (below, "users") appear to polarise around diverging authoritative statements. While some echo Donald Trump's claims that the ingredient is effective (including in combination with azythromycin), others relay the World Health Organisation's claim that it is not. A small majority state the same claim as the CDC and the NIH who rule the matter as still "uncertain".
 
@@ -91,9 +90,9 @@ There is further disagreement on whether COVID-19 is transmitted through droplet
 
 The debate on whether the virus is droplet or aerosol airborne shows how popular understandings of viral transmission appear to have evolved through discussions between authoritative sources and audiences. Early public doubts about whether the virus was airborne have prompted authorities to define and measure airborne transmission in increasingly concrete terms ([Figure 6](#^figure-6)). While the World Health Organisation had stated earlier that airborne transmission is an exchange of infected droplets, recent findings on aerosol transmission substantiate earlier public conceptions of airborne transmission as a somewhat ubiquitous form of “air infection” [@mandavilli239ExpertsOne2020].
 
-## Twitter has adapted its content moderation policies to capture the disputed nature of COVID-19 information
+### Twitter has adapted its content moderation policies to capture the disputed nature of COVID-19 information
 
-In the face of such disputes, Twitter’s “COVID-19 misleading information” policy underwent very frequent changes throughout 2020 (see [[^figure-7|Figure 7]]). On February 4, 2020, Twitter's initial definition of COVID-19 misinformation is based on a conception of misinformation as deceit, be that in the intent of its author (“media shared in a deceptive manner”) or in its technical composition (“synthetic or manipulated media” on the virus) [@chuHelpingWorldFind2020]. This definition follows existing conceptions of misinformation as semantically or technically inauthentic. Examples of the former include “a deliberate intent to deceive people about the nature or origin of the content”, and for the latter, “content that has been substantially edited in a manner that fundamentally alters its composition, sequence, timing, or framing”, “any visual or auditory information that has been added or removed”, and “fabricated or simulated media depicting a real person” (Twitter, 2020a). Both of these types of information are subjected to an incremental type of moderation, where they are first labelled, demoted and altogether removed after infringing misinformation policies more than once [@rothUpdatingOurApproach2020]. Twitter's policy against COVID misinformation as "manipulated media" is sealed with a general “zero tolerance approach to platform manipulation”, announced in March 4, 2020 (Twitter, 2020b).
+In the face of such disputes, Twitter’s “COVID-19 misleading information” policy underwent very frequent changes throughout 2020 (see [[#^figure-7|Figure 7]]). On February 4, 2020, Twitter's initial definition of COVID-19 misinformation is based on a conception of misinformation as deceit, be that in the intent of its author (“media shared in a deceptive manner”) or in its technical composition (“synthetic or manipulated media” on the virus) [@chuHelpingWorldFind2020]. This definition follows existing conceptions of misinformation as semantically or technically inauthentic. Examples of the former include “a deliberate intent to deceive people about the nature or origin of the content”, and for the latter, “content that has been substantially edited in a manner that fundamentally alters its composition, sequence, timing, or framing”, “any visual or auditory information that has been added or removed”, and “fabricated or simulated media depicting a real person” (Twitter, 2020a). Both of these types of information are subjected to an incremental type of moderation, where they are first labelled, demoted and altogether removed after infringing misinformation policies more than once [@rothUpdatingOurApproach2020]. Twitter's policy against COVID misinformation as "manipulated media" is sealed with a general “zero tolerance approach to platform manipulation”, announced in March 4, 2020 (Twitter, 2020b).
 
 As the virus disseminates outside of China in early March, Twitter broadens its conception of COVID-19 misinformation as contradicting local and international "authoritative sources" (Twitter, 2020b). The idea, then, is to establish a baseline of facts about the virus with which to moderate user-generated contents. Content moderation targets content that may contradict what is known and stated by authoritative sources. This includes “denial of global or local health authority recommendations to decrease someone’s likelihood of exposure to COVID-19”; “denial of established scientific facts about transmission during the incubation period or transmission guidance from global and local health authorities”; and “alleged cures for COVID-19 that are not immediately harmful but are known to be ineffective” (Twitter, 2020b). To reinforce this policy, Twitter prioritises posts by the World Health Organisation and local health organisations in users' homepages and personal timelines. From January 29, 2020, Twitter also launches a series of labelling techniques to redirect users towards claims by authoritative sources on the transmission, protection and treatment of the virus. Contradictions to these claims are first labelled and then removed (see [[#^figure-6|Figure 6]]) (Twitter, 2020b).  
 
@@ -104,7 +103,7 @@ Later, on December 16, 2020, Twitter goes as far as to specify the type of rheto
 ![Figure 7](images/Figure%207%201.png)
 **Figure 7**. *Timeline of Twitter's "COVID-19 misleading information policy". Source in image. Visualisation by Emillie de Keulenaar, with previous contributions by Guilherme Appolinário.* ^figure-7
 
-## Twitter acts as a debunking system
+### Twitter acts as a debunking system
 
 In practice, this means labelling almost every Tweet that mentions a COVID-19 treatment ingredient disputed by authoritative sources (see [[#^figure-8|Figure 8]]). Though some are deleted, most are simply flagged and redirected to a centralised reference page on local COVID-19 guidelines and information. This also applies to claims disputed amongst authoritative sources, such as whether hydroxychloroquine is or is not a safe drug.
 
@@ -116,7 +115,7 @@ It also means supporting authoritative sources in their continuous debunking of 
 ![Figure 9](images/Figure%209.png)
 **Figure 9**. *Beeswarm of Twitter labels for Tweets mentioning COVID transmission, prevention and treatment.* ^figure-9
 
-## In the absence of consensus between authoritative sources, Twitter intervenes as an authority in its own right
+### In the absence of consensus between authoritative sources, Twitter intervenes as an authority in its own right
 
 At issue is that disagreements amongst authoritative sources create a crisis of authority on the platform. Twitter can no longer redirect users to one specific source. In the absence of consensus among authorities, Twitter begins to highlight the disputed nature of even authoritative claims (see Figure 10). This applies particularly to U.S. President Donald Trump's private account. While audience Tweets are more severely moderated (suspended, deleted), Trump's Tweets initially obtain the "#KnowTheFacts" prompt the platform introduced in January 29th (see Figure 7). Reuniting several other authoritative sources, this prompt is intended to display current consensus among a majority of authoritative sources, including "trusted news sources" (Twitter, 2020c). As Trump alleges that "sometimes over 100,000" people "die from the Flu" in October, Twitter flags it for violating "the Twitter Rules about spreading misleading and potentially harmful information related to COVID-19." The same happens to a later Tweet claiming immunity from COVID-19.
 
@@ -125,13 +124,13 @@ At issue is that disagreements amongst authoritative sources create a crisis of 
 
 Both of them do stay up, in accordance with Twitter's "World leaders" and "Public-interest exceptions" policies (Twitter, 2019), until Trump's account is permanently suspended for violating a separate policy designed to prevent ‘glorification of violence’ (Twitter, 2021).
 
-# Methods
+## Methods
 
 The methodology of this study is two-fold. Based on a collection of millions of Tweets, we first parse, analyse and visualise diverging claims on COVID-19 transmission, prevention and treatments between U.S. authoritative sources and their respective audiences. We then look at how Twitter moderated disputed claims by first consulting content moderation policies designed for COVID-19 misinformation, and then obtaining moderation metadata from Tweets containing disputed contents.
 
 ![Figure 10](images/Figure%2010.png)
 **Figure 10**. *Method diagram.* 
-## Definitions
+### Definitions
 
 The U.S. has at least two channels responsible for communicating authoritative information on COVID-19: its head of state and its health departments or disease prevention agencies (See Table 1 in Annex). Because Twitter prioritises the World Health Organisation as an authoritative source, we also captured data from that organisation’s international and American offices. We refer to heads of state and public health organisations as “authoritative sources”, and the W.H.O., health ministries, departments and disease prevention agencies as “public health organisations”. By “audiences”, we refer to users who have at some point interacted with any one of the authoritative sources in our list, be it by replying, mentioning them or their website domains (e.g., [whitehouse.org](https://www.google.com/url?q=http://whitehouse.org&sa=D&source=editors&ust=1707917247181224&usg=AOvVaw0Dk89qDkP8Skgu_LOEiJp7)).
 
@@ -141,15 +140,15 @@ By “claims” about the coronavirus, we mean information that can be confirmed
 2. available treatments; and
 3. preventive methods.
 
-## Data collection
+### Data collection
 
 For data collection on Twitter, we used Rieder and Borra’s Twitter Capture and Analysis Tool, which collects tweets based on a chosen set of queries (Borra & Rieder, 2014). These queries were “covid”, “coronavirus” and “WuhanVirus” and captured a total of 61,498,037 tweets from January 26th to October, 2020. Of those, we extracted 910 tweets from government and public health organisations and 496,166 replies and mentions of official domains. In addition to Tweets, we also collected claims on COVID-19 transmission, prevention and treatment by the CDC, NIV and Donald Trump on their official websites ([cdc.gov](https://www.google.com/url?q=http://cdc.gov&sa=D&source=editors&ust=1707917247182514&usg=AOvVaw0k6frAaoSTq7IqzfBCb0Lc), [nih.org](https://www.google.com/url?q=http://nih.org&sa=D&source=editors&ust=1707917247182813&usg=AOvVaw3x3Q5jmHTztr13-3hNdUg4), [whitehouse.gov](https://www.google.com/url?q=http://whitehouse.gov&sa=D&source=editors&ust=1707917247183123&usg=AOvVaw29IPlYl6Rr1saZgW_dg3Ba)). Information on Twitter's COVID-19 misinformation moderation policies came primarily from two sources: Twitter's blog on COVID-19, and its "COVID-19 Misleading Information Policy". From these, we were able to note what information they target and how they moderate it (suspension, labelling, deletion, etc). We then obtained moderation metadata from Tweets that mentioned disputed claims by using Selenium.
 
-## Parsing claims inductively and deductively
+### Parsing claims inductively and deductively
 
 To map divergences in government, public health organisation and “audience” statements about COVID-19, we sought to capture and compare the widest possible range of claims about the transmission, prevention and treatment of the virus. We captured both true and false statements with both deductive and inductive approaches. The deductive approach consisted in consulting secondary sources on COVID-19 misinformation, such as Wikipedia (Annex: Table 1). The inductive approach consisted in manual and semi-automatic capture of claims. This involved reading Tweets and (authoritative or official) websites that contained the words “transmission”, “prevention” or “protection” and “treatment” or “cure”. We also generated word embeddings and bigrams for the queries “transmission”, “prevention” or “protection” and “treatments” or “cure” to find other relevant terms. We obtained a total of 48 words for transmission, 83 for treatments (2,739 with medications extracted from [drugbank.ca](https://www.google.com/url?q=http://drugbank.ca&sa=D&source=editors&ust=1707917247184073&usg=AOvVaw36od-3a7_iaxTEA9IhAdRQ)) and 79 for prevention (Annex: Table 2).
 
-## Coding and filtering claims in Tweets and official websites
+### Coding and filtering claims in Tweets and official websites
 
 We split and detected sentences per topic as follows:
 
@@ -161,15 +160,15 @@ For more complex queries such as whether the virus is airborne or whether one sh
 
 We then manually coded the information retrieved from government and health authorities' official webpages on whether they provided any instructions or claims about transmission, treatments and use of masks that were inconsistent among them. We used the Internet Archive to track changes in the information in these webpages from January 2020 to July 2020. For each page with any information about transmission, treatments or use of masks, we coded them by date of change accordingly. For transmission, we coded if they agree if the transmission is possible through airborne or aerosol, contact, droplet, fluid or animals. For treatments, we coded if they recommend chloroquine, hydroxychloroquine or ibuprofen. For masks, we coded if they recommend wearing a mask or face-covering in public, wear a mask if one has symptoms, or wear a mask if around sick people.
 
-## Coding and filtering claims in social media textual data: limitations
+### Coding and filtering claims in social media textual data: limitations
 
 Twitter audience responses contain a large number of retweets of claims made by authoritative sources. Because of this, we also included Tweets that do not necessarily reply or mention authoritative sources but are geolocated in the U.S. Geolocation is included in TCAT's Tweet metadata.
 
-## Moderation data
+### Moderation data
 
 Moderation status and labels for the 4.2 million relevant Tweets (i.e., by authoritative sources or audiences, and containing any of our keywords) were gathered using web scraping (Selenium).
 
-# Annex
+## Annex
 
 Table 1. Sources of false and true COVID-19 information
 
@@ -268,3 +267,6 @@ Table 1. Sources of false and true COVID-19 information
 The authors would like to acknowledge Jack Wilson and Carlo de Gaetano for their contributions to this research. Emillie de Keulenaar’s participation has been supported by the UKRI-Canada ESRC grant, Responsible AI for Inclusive, Democratic Societies: a Cross-disciplinary approach to detecting and countering abusive language online (ESRC reference: ES/T012714/1).
 
 <div class="page-break" style="page-break-before: always;"></div>
+
+
+<div class="page-break"></div>
