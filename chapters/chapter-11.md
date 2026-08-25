@@ -93,3 +93,23 @@ As discussed at the outset, a post-truth autopsy genre has sought to pin blame o
 Lyotard was perceptive in speculating on "\[d\]ata banks \[as\] the encyclopedia of tomorrow" (1984, 43). But while Wikipedia may indeed represent the ‘principle of a plurality of formal and axiomatic systems capable of arguing the truth of denotative statements’ (53), in their ‘paralogical’ definition of multiple worlds of truth (60), altpedias in a sense represent more than postmodern encyclopaedias. As is the case in altpedias, normative definitions of knowledge are still elucidated by different readings of history, and, in this sense, of narrative knowledge. While Wikipedia has been designed to host as many ‘narratives’ as possible, the argument posted by the altpedias analyzed here is that it does so within a limited spectrum governed by the normative criteria of liberal consensus which seeks to depoliticize epistics as essentially “neutral”. In contrast, the altpedias analyzed here view Wikipedia as the hegemonic representative of false neutrality and see themselves as engaged in a zero-sum game of *weaponized knowledge production*. 
 
 And so, while they may indeed be used as resources to manufacture all manner of misinformation, it is inaccurate to conceptualize this problematic in terms of post-truth. altpedias are not so much a sign of the obsolescence of truth, but rather evidence that compendia of knowledge designed to harmonise all knowledge and withstand epistemic ruptures are still delimited in their conceptions as to what acceptable knowledge is. Beyond Wikipedia lie the altpedias, which seek to imbue their partisan politics with the universal tone, format and functions of the utopian project of open source knowledge, and to provide refuge for those forms of knowledge excluded from the epistemic ‘mainstream’.
+
+
+[^1]:  This article is the product of a project done in collaboration with Derrek Xavier, Tommaso Elli, Felipe Escobar, Abraham Koshy, Jesper Hinze, Daniël de Zeeuw, Giovanni Profeta, Nina Welt, Aurelio Amaral, Michele Mauri and Richard Rogers. The authors would like to thank their contribution. 
+
+[^2]:  Wikipedia: Neutral point of view [https://en.wikipedia.org/wiki/Wikipedia:Neutral\_point\_of\_view](https://en.wikipedia.org/wiki/Wikipedia:Neutral_point_of_view)
+
+[^3]:  While Deneen’s account is focussed on current crises in American politics, much of his central critique of liberalism can arguably be applied to Lyotard’s “postmodern condition” more generally.
+
+[^4]:  In November of 2018 the service hosting the Rightpedia domain terminated its service thereby taking the site offline.
+
+[^5]:  Insofar as they frequently engage in forms of knowledge production that are profoundly bigoted, in relation to how these concepts are discussed in current political theory, the altpedias studied here would be more accurately described as “antagonistic” as opposed to “agonistic” (see Mouffe 2013).
+
+[^6]:  Forking refers to a term from computing, meaning the act of copying a local source of software that then gets modified overtime.
+
+[^7]:  This figure is a snapshot — please click on its link to access the full version of our visualisation. 
+
+[^8]:  Though Metapedia shares a similar lexicon in pages containing information about the notion of “veracity”, it associates “veridic” information to its documentation of the Holocaust, which it considers a “hoax” peddled by “deniers”.
+
+
+<div class="page-break"></div>

@@ -154,7 +154,7 @@ Finally, for closer reading, I looked at how consistently each model answered a 
 
 #### Ethics 
 
-There are ethical considerations in using questions posed on social media as prompts. These questions were not intended to be used as such. One imperfect solution is, of course, to anonymise any personal data and exclude questions about one's personal life. The other is to highlight the larger significance of questions posed on Reddit as a space for ongoing public debate, which may be different in kind to personal questions. The space in which these questions have originally been asked is after all public facing, and LLMs have become part of yet another kind of public sphere. 
+There are ethical considerations in using questions posed on social media as prompts. These questions were not intended to be repurposed for comparative prompting, and their availability on a public-facing subreddit does not by itself resolve questions of contextual integrity. The study did not undergo a formal institutional ethics review. At the time of its design, it was treated as research on public debate rather than on identifiable individuals: questions about personal life were excluded, usernames and other personal information were removed, and findings were reported at the level of topics and model responses. This distinction between public and personal questions reduced, but did not eliminate, the possibility that a quoted prompt could be searched back to its author. Under current expectations, the same design would warrant prospective review and a documented assessment of traceability, subreddit context and the risks created by reproducing user text across model providers. The analytical justification remains that questions posed on Reddit form part of an ongoing public debate, while LLMs have become part of another kind of public sphere; the ethical implication is that this passage between the two must itself be made explicit.
 
 In what follows, I first look at how different LLMs estimate different degrees of "risk" for each prompt, and then proceed to examine which discursive techniques they apply to prompts per topic, controversy and moderation score. 
 
@@ -255,4 +255,22 @@ At the same time, LLMs might also exercise a form of _parrhesia_, in the sense o
 
 ## Acknowledgments
 
-I would like to acknowledge the mentorship, feedback and input of Tarleton Gillespie; the conceptual and methodological contributions of Etienne Grenier, Yuhe Ma and Angeles Briones; and the feedback of Mary Gray, Chuncheng Liu, Zaidat Ibrahim, danah boyd, Nancy Baym, Parker Bach, Emily Tseng, Ryland Shaw and the Social Media Collected team of 2024.
+I would like to acknowledge the mentorship, feedback and input of Tarleton Gillespie; the conceptual and methodological contributions of Etienne Grenier, Yuhe Ma and Angeles Briones; and the feedback of Mary Gray, Chuncheng Liu, Zaidat Ibrahim, danah boyd, Nancy Baym, Parker Bach, Emily Tseng, Ryland Shaw and the Social Media Collected team of 2024. 
+
+
+[^2]: This can be seen with the sudden shift of terms like "Eskimo" — a term widely used until half of the 1960s — to "Inuit" or "First Nations people"; or "African American", "Black", "BIPOC" and "person of colour" in English; and "White", "Aryan" and "European" in German. 
+
+[^3]: "Le bâillon" and "le masque" in the original [@faugereCensureTabou2023, p.16]. 
+
+[^4]: One may remember Foucault's characterization of Bentham's panopticon as a model for norm exteriorization. 
+
+[^5]: From these sectors are defined a range of "risky behaviours" including hallucinations; harmful content and harms of representation to allocation and quality of service; disinformation and influence operations; proliferation of conventional and unconventional weapons; privacy; cybersecurity; potential for risky emergent behaviours; interactions with other systems; economic impacts; acceleration; and overreliance. [@openaiGPT4SystemCard2023, p. 4]. 
+
+[^6]: An example is the dumping of Soviet status in insignificant spaces of decommunised, Eastern European countries [@sarahstackeSeeBizarrePlaces2017]. 
+
+[^7]: Arabic, Hindi and Swahili were also used, but yielded no results. 
+
+<div class="page-break" style="page-break-before: always;"></div>
+
+
+<div class="page-break"></div>

@@ -141,3 +141,13 @@ While a modulated moderation does entail much more attention to speech control, 
 One can presume how such “normative plasticity” – a rather flexible approach to define and police harmful content – can be useful for Twitter. Politically, it creates a sort of middle-ground arrangement, whereby the company tries to define itself as neither a neutral platform nor as a censor. Since the documents we read are explicitly about objectionable speech, any assumption about the economic consequences of this transformation can only be indirectly assessed. It is evident, though, that nuanced enforcement mechanisms also render moderation more amenable to Twitter’s business model. Not only does content continue to circulate – generating potential interactions and data – but users might have fewer incentives to migrate to other platforms with more suited content moderation philosophies.
 
 This may invite a reconsideration of content moderation as not just a form of adjudication between multiple views of what counts as objectionable but a form of modulating the very meaning of objectionability. Such sociomaterial and strongly institutionalized practice is shaped by a built-in representational failure created by platforms’ problem of partiality, i.e. its lack of  legitimacy to arbitrate complex and contradictory speech norms. In this sense, modulated moderation is more a  political than a moral art, aimed at building a pragmatic, crisis-resistant speech architecture that is able to withstand external shocks resulting from the unpredictable ways in which speech becomes unacceptable.
+
+
+---
+
+1 Difflib is a built-in Python module consisting of simple functions and classes that allow users to compare data sets. We used difflib to compare the differences between daily instances of archived policies.
+
+<div class="page-break" style="page-break-before: always;"></div>
+
+
+<div class="page-break"></div>

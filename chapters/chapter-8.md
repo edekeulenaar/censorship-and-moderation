@@ -48,6 +48,51 @@ The decision to moderate authorities appears to mark a shift between redirecting
 
 Twitter's moderation of existing authorities speaks to a number of foundational concepts of political theory, among which is Carl Schmitt's famed phrase that the "sovereign" is "that which decides the state of exception" [@schmittPoliticalTheologyFour2005]. As consensus wanes among existing authorities in a given body politic and crisis sets in, the one who will hold ultimate authority is that who intervenes and decides for those in this sphere regardless of the legality of their actions. It is not so much Twitter's content moderation policies that legitimise its moderation of authoritative sources, but its very ability to do so regardless of existing conventions.
 
+## Methods
+
+The methodology of this study is two-fold. Based on a collection of millions of Tweets, we first parse, analyse and visualise diverging claims on COVID-19 transmission, prevention and treatments between U.S. authoritative sources and their respective audiences. We then look at how Twitter moderated disputed claims by first consulting content moderation policies designed for COVID-19 misinformation, and then obtaining moderation metadata from Tweets containing disputed contents.
+
+![Method diagram](images/Figure%2010.png)
+**Figure M1.** *Method diagram.* ^figure-m1 
+
+### Definitions
+
+The U.S. has at least two channels responsible for communicating authoritative information on COVID-19: its head of state and its health departments or disease prevention agencies (See Table 1 in Annex). Because Twitter prioritises the World Health Organisation as an authoritative source, we also captured data from that organisation’s international and American offices. We refer to heads of state and public health organisations as “authoritative sources”, and the W.H.O., health ministries, departments and disease prevention agencies as “public health organisations”. By “audiences”, we refer to users who have at some point interacted with any one of the authoritative sources in our list, be it by replying, mentioning them or their website domains (e.g., [whitehouse.org](https://www.google.com/url?q=http://whitehouse.org&sa=D&source=editors&ust=1707917247181224&usg=AOvVaw0Dk89qDkP8Skgu_LOEiJp7)).
+
+By “claims” about the coronavirus, we mean information that can be confirmed as true or refuted as false by governments and health organisations. We focused on:
+
+1. how the virus is transmitted;
+2. available treatments; and
+3. preventive methods.
+
+### Data collection
+
+For data collection on Twitter, we used Rieder and Borra’s Twitter Capture and Analysis Tool, which collects tweets based on a chosen set of queries (Borra & Rieder, 2014). These queries were “covid”, “coronavirus” and “WuhanVirus” and captured a total of 61,498,037 tweets from January 26th to October, 2020. Of those, we extracted 910 tweets from government and public health organisations and 496,166 replies and mentions of official domains. In addition to Tweets, we also collected claims on COVID-19 transmission, prevention and treatment by the CDC, NIV and Donald Trump on their official websites ([cdc.gov](https://www.google.com/url?q=http://cdc.gov&sa=D&source=editors&ust=1707917247182514&usg=AOvVaw0k6frAaoSTq7IqzfBCb0Lc), [nih.org](https://www.google.com/url?q=http://nih.org&sa=D&source=editors&ust=1707917247182813&usg=AOvVaw3x3Q5jmHTztr13-3hNdUg4), [whitehouse.gov](https://www.google.com/url?q=http://whitehouse.gov&sa=D&source=editors&ust=1707917247183123&usg=AOvVaw29IPlYl6Rr1saZgW_dg3Ba)). Information on Twitter's COVID-19 misinformation moderation policies came primarily from two sources: Twitter's blog on COVID-19, and its "COVID-19 Misleading Information Policy". From these, we were able to note what information they target and how they moderate it (suspension, labelling, deletion, etc). We then obtained moderation metadata from Tweets that mentioned disputed claims by using Selenium.
+
+### Parsing claims inductively and deductively
+
+To map divergences in government, public health organisation and “audience” statements about COVID-19, we sought to capture and compare the widest possible range of claims about the transmission, prevention and treatment of the virus. We captured both true and false statements with both deductive and inductive approaches. The deductive approach consisted in consulting secondary sources on COVID-19 misinformation, such as Wikipedia (Annex: Table 1). The inductive approach consisted in manual and semi-automatic capture of claims. This involved reading Tweets and (authoritative or official) websites that contained the words “transmission”, “prevention” or “protection” and “treatment” or “cure”. We also generated word embeddings and bigrams for the queries “transmission”, “prevention” or “protection” and “treatments” or “cure” to find other relevant terms. We obtained a total of 48 words for transmission, 83 for treatments (2,739 with medications extracted from [drugbank.ca](https://www.google.com/url?q=http://drugbank.ca&sa=D&source=editors&ust=1707917247184073&usg=AOvVaw36od-3a7_iaxTEA9IhAdRQ)) and 79 for prevention (Annex: Table 2).
+
+### Coding and filtering claims in Tweets and official websites
+
+We split and detected sentences per topic as follows:
+
+1. Transmission: sentences mentioning “infect”, “transmi”, “transfer”, “contag”, “contamin”, “catch”, or “spread”;
+2. Prevention: sentences mentioning “prevent”, “protect”;
+3. Treatment: sentences mentioning “treatment”, “cure” and “vaccine”.
+
+For more complex queries such as whether the virus is airborne or whether one should wear masks, we manually coded every sentence that mentioned both “wear” and “mask” for the masks query and “airborne” and either “aerosol” or “droplet” for the “airborne” query. For sentences mentioning COVID-19 transmission, coding meant annotating claims that (1) the virus is or is not airborne, and more specifically that (2) it spread through droplets or aerosols. For those mentioning protection, it implied annotating claims that (1) the general public should and should not wear masks (“should wear”, “should not wear”, respectively) and (2) who should be wearing masks (caregivers, essential workers, travellers…). In many cases, claims were far beyond simple binaries, and if frequent, required a category of their own.
+
+We then manually coded the information retrieved from government and health authorities' official webpages on whether they provided any instructions or claims about transmission, treatments and use of masks that were inconsistent among them. We used the Internet Archive to track changes in the information in these webpages from January 2020 to July 2020. For each page with any information about transmission, treatments or use of masks, we coded them by date of change accordingly. For transmission, we coded if they agree if the transmission is possible through airborne or aerosol, contact, droplet, fluid or animals. For treatments, we coded if they recommend chloroquine, hydroxychloroquine or ibuprofen. For masks, we coded if they recommend wearing a mask or face-covering in public, wear a mask if one has symptoms, or wear a mask if around sick people.
+
+### Coding and filtering claims in social media textual data: limitations
+
+Twitter audience responses contain a large number of retweets of claims made by authoritative sources. Because of this, we also included Tweets that do not necessarily reply or mention authoritative sources but are geolocated in the U.S. Geolocation is included in TCAT's Tweet metadata.
+
+### Moderation data
+
+Moderation status and labels for the 4.2 million relevant Tweets (i.e., by authoritative sources or audiences, and containing any of our keywords) were gathered using web scraping (Selenium).
+
 ## Findings
 
 ### Authoritative sources and their audiences contradict each other most on undetermined facts, such as COVID-19 treatments
@@ -124,49 +169,16 @@ At issue is that disagreements amongst authoritative sources create a crisis of 
 
 Both of them do stay up, in accordance with Twitter's "World leaders" and "Public-interest exceptions" policies (Twitter, 2019), until Trump's account is permanently suspended for violating a separate policy designed to prevent ‘glorification of violence’ (Twitter, 2021).
 
-## Methods
+## Discussion and conclusion
 
-The methodology of this study is two-fold. Based on a collection of millions of Tweets, we first parse, analyse and visualise diverging claims on COVID-19 transmission, prevention and treatments between U.S. authoritative sources and their respective audiences. We then look at how Twitter moderated disputed claims by first consulting content moderation policies designed for COVID-19 misinformation, and then obtaining moderation metadata from Tweets containing disputed contents.
+The findings show that Twitter's authority during the first year of the pandemic was neither delegated in advance nor derived from a stable capacity to determine which claim was true. It emerged from a breakdown in the arrangement on which the platform's policy depended. Twitter could defer to authoritative sources while those sources converged; when they contradicted one another, the platform had to decide which departures from their general consensus could remain visible. Its authority was therefore *accidental* in a precise sense: a by-product of moderating the relations among authorities rather than a role the platform initially claimed for itself.
 
-![Figure 10](images/Figure%2010.png)
-**Figure 10**. *Method diagram.* 
-### Definitions
+This changes how misinformation moderation may be understood. The relevant object is not only a false post considered in isolation, but the distribution of agreement through which a claim becomes actionable as misleading. Labels, prompts, demotion and suspension formed a modular repertoire for managing that distribution under uncertainty. Such techniques allowed Twitter to signal that a statement was disputed before it could establish that it was false, but they also gave a private platform the capacity to determine which institutional disagreements counted as legitimate. Consensus functioned as a practical proxy for truth while simultaneously becoming an object the platform could shape.
 
-The U.S. has at least two channels responsible for communicating authoritative information on COVID-19: its head of state and its health departments or disease prevention agencies (See Table 1 in Annex). Because Twitter prioritises the World Health Organisation as an authoritative source, we also captured data from that organisation’s international and American offices. We refer to heads of state and public health organisations as “authoritative sources”, and the W.H.O., health ministries, departments and disease prevention agencies as “public health organisations”. By “audiences”, we refer to users who have at some point interacted with any one of the authoritative sources in our list, be it by replying, mentioning them or their website domains (e.g., [whitehouse.org](https://www.google.com/url?q=http://whitehouse.org&sa=D&source=editors&ust=1707917247181224&usg=AOvVaw0Dk89qDkP8Skgu_LOEiJp7)).
+There are limits to what follows from this case. The study concerns English-language communication during an exceptional period, and its reconstructive method observes public traces of moderation rather than internal deliberations or classifier decisions. The audience corpus is also defined through visible interaction with a limited set of US and international authorities, and therefore cannot represent every public concerned with COVID-19. Even so, the case identifies a wider problem for moderation under epistemic uncertainty: deference to authority does not remove platform judgement but postpones it until authorities disagree. At that point, transparency requires more than publishing a rule. It requires platforms to disclose which authorities, forms of evidence and degrees of consensus they use when deciding whose claim is treated as an outlier.
 
-By “claims” about the coronavirus, we mean information that can be confirmed as true or refuted as false by governments and health organisations. We focused on:
 
-1. how the virus is transmitted;
-2. available treatments; and
-3. preventive methods.
-
-### Data collection
-
-For data collection on Twitter, we used Rieder and Borra’s Twitter Capture and Analysis Tool, which collects tweets based on a chosen set of queries (Borra & Rieder, 2014). These queries were “covid”, “coronavirus” and “WuhanVirus” and captured a total of 61,498,037 tweets from January 26th to October, 2020. Of those, we extracted 910 tweets from government and public health organisations and 496,166 replies and mentions of official domains. In addition to Tweets, we also collected claims on COVID-19 transmission, prevention and treatment by the CDC, NIV and Donald Trump on their official websites ([cdc.gov](https://www.google.com/url?q=http://cdc.gov&sa=D&source=editors&ust=1707917247182514&usg=AOvVaw0k6frAaoSTq7IqzfBCb0Lc), [nih.org](https://www.google.com/url?q=http://nih.org&sa=D&source=editors&ust=1707917247182813&usg=AOvVaw3x3Q5jmHTztr13-3hNdUg4), [whitehouse.gov](https://www.google.com/url?q=http://whitehouse.gov&sa=D&source=editors&ust=1707917247183123&usg=AOvVaw29IPlYl6Rr1saZgW_dg3Ba)). Information on Twitter's COVID-19 misinformation moderation policies came primarily from two sources: Twitter's blog on COVID-19, and its "COVID-19 Misleading Information Policy". From these, we were able to note what information they target and how they moderate it (suspension, labelling, deletion, etc). We then obtained moderation metadata from Tweets that mentioned disputed claims by using Selenium.
-
-### Parsing claims inductively and deductively
-
-To map divergences in government, public health organisation and “audience” statements about COVID-19, we sought to capture and compare the widest possible range of claims about the transmission, prevention and treatment of the virus. We captured both true and false statements with both deductive and inductive approaches. The deductive approach consisted in consulting secondary sources on COVID-19 misinformation, such as Wikipedia (Annex: Table 1). The inductive approach consisted in manual and semi-automatic capture of claims. This involved reading Tweets and (authoritative or official) websites that contained the words “transmission”, “prevention” or “protection” and “treatment” or “cure”. We also generated word embeddings and bigrams for the queries “transmission”, “prevention” or “protection” and “treatments” or “cure” to find other relevant terms. We obtained a total of 48 words for transmission, 83 for treatments (2,739 with medications extracted from [drugbank.ca](https://www.google.com/url?q=http://drugbank.ca&sa=D&source=editors&ust=1707917247184073&usg=AOvVaw36od-3a7_iaxTEA9IhAdRQ)) and 79 for prevention (Annex: Table 2).
-
-### Coding and filtering claims in Tweets and official websites
-
-We split and detected sentences per topic as follows:
-
-1. Transmission: sentences mentioning “infect”, “transmi”, “transfer”, “contag”, “contamin”, “catch”, or “spread”;
-2. Prevention: sentences mentioning “prevent”, “protect”;
-3. Treatment: sentences mentioning “treatment”, “cure” and “vaccine”.
-
-For more complex queries such as whether the virus is airborne or whether one should wear masks, we manually coded every sentence that mentioned both “wear” and “mask” for the masks query and “airborne” and either “aerosol” or “droplet” for the “airborne” query. For sentences mentioning COVID-19 transmission, coding meant annotating claims that (1) the virus is or is not airborne, and more specifically that (2) it spread through droplets or aerosols. For those mentioning protection, it implied annotating claims that (1) the general public should and should not wear masks (“should wear”, “should not wear”, respectively) and (2) who should be wearing masks (caregivers, essential workers, travellers…). In many cases, claims were far beyond simple binaries, and if frequent, required a category of their own.
-
-We then manually coded the information retrieved from government and health authorities' official webpages on whether they provided any instructions or claims about transmission, treatments and use of masks that were inconsistent among them. We used the Internet Archive to track changes in the information in these webpages from January 2020 to July 2020. For each page with any information about transmission, treatments or use of masks, we coded them by date of change accordingly. For transmission, we coded if they agree if the transmission is possible through airborne or aerosol, contact, droplet, fluid or animals. For treatments, we coded if they recommend chloroquine, hydroxychloroquine or ibuprofen. For masks, we coded if they recommend wearing a mask or face-covering in public, wear a mask if one has symptoms, or wear a mask if around sick people.
-
-### Coding and filtering claims in social media textual data: limitations
-
-Twitter audience responses contain a large number of retweets of claims made by authoritative sources. Because of this, we also included Tweets that do not necessarily reply or mention authoritative sources but are geolocated in the U.S. Geolocation is included in TCAT's Tweet metadata.
-
-### Moderation data
-
-Moderation status and labels for the 4.2 million relevant Tweets (i.e., by authoritative sources or audiences, and containing any of our keywords) were gathered using web scraping (Selenium).
+---
 
 ## Annex
 
