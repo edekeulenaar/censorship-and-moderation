@@ -46,3 +46,107 @@ Part of this transformation is already visible through research on so-called "pr
 
 
 <div class="page-break"></div>
+
+### Additional sources consolidated from chapter bibliographies
+
+4chan. (2022). _Rules — 4chan_. [https://www.4channel.org/rules](https://www.4channel.org/rules)
+
+Appelman, N. (2025). _Contesting Online Exclusion: EU Regulation of Content Moderation through an Agonistic Lens_ [Doctoral dissertation, University of Amsterdam]. [https://dare.uva.nl/id/77e33187-3c43-4223-bbae-fac26461b1a3](https://dare.uva.nl/id/77e33187-3c43-4223-bbae-fac26461b1a3)
+
+de Keulenaar, E. (2024). Dissenting speech norms and the evolution of “alt-tech” as counter-spheres. _Crime Refracted? Online Deviance in the New Platform Ecosystem_, University of Copenhagen. [https://drive.google.com/file/d/1YpSmsCbTWyvTE4_0_WuBQ3p0joLlfXEI/view](https://drive.google.com/file/d/1YpSmsCbTWyvTE4_0_WuBQ3p0joLlfXEI/view)
+
+de Keulenaar, E., Helmond, A., Rieder, B., Poell, T., & van Gorp, J. (2025). Computational cross-media research: Tracing divergences between normative Dutch television and social media discourses on the “refugee crisis” (2013–2018). _Convergence, 31_(5), 1606–1628. [https://doi.org/10.1177/13548565241258956](https://doi.org/10.1177/13548565241258956)
+
+de Keulenaar, E., & Kisjes, I. (2022). A genealogy of “problematic information” in YouTube hate speech and misinformation controversies (2004–2022). _AoIR 2022: Decolonizing the Internet_, 1–31. [https://drive.google.com/file/d/1tFvSUPYATiW5c0sLx5mFo7koL-QoJ7P5/view](https://drive.google.com/file/d/1tFvSUPYATiW5c0sLx5mFo7koL-QoJ7P5/view)
+
+de Keulenaar, E., Viz Quadrat, S., Portela, Y., & Alves dos Santos Junior, M. (2026). Normative dislocation: When platforms moderate without memory. _New Media & Society, 28_(4), 1437–1463. [https://doi.org/10.1177/14614448251364814](https://doi.org/10.1177/14614448251364814)
+
+Fœssel, M. (2021). _Récidive 1938_. Presses Universitaires de France.
+
+Leerssen, P. (2023). An end to shadow banning? Transparency rights in the Digital Services Act between content moderation and curation. _Computer Law & Security Review, 48_, 105790. [https://doi.org/10.1016/j.clsr.2023.105790](https://doi.org/10.1016/j.clsr.2023.105790)
+
+m., davide. (2019, June 9). ProcessingFailure error (400) while retrieving CommentThreads list. _Stack Overflow_. [https://stackoverflow.com/questions/56516894/processingfailure-error-400-while-retrieving-commentthreads-list](https://stackoverflow.com/questions/56516894/processingfailure-error-400-while-retrieving-commentthreads-list)
+
+Metapedia. (2018). _Wikipedia_. [https://en.metapedia.org/wiki/Wikipedia](https://en.metapedia.org/wiki/Wikipedia) (accessed 28 October 2018).
+
+Metapedia. (2019a). _Metapedia: Statistics_. [https://en.metapedia.org/wiki/Special:Statistics](https://en.metapedia.org/wiki/Special:Statistics) (accessed 15 March 2019).
+
+Metapedia. (2019b). _The Holocaust_. [https://en.metapedia.org/wiki/The_Holocaust](https://en.metapedia.org/wiki/The_Holocaust) (accessed 15 March 2019).
+
+Musk, E. [@elonmusk]. (2022, November 24). Hate speech impressions down by 1/3 from pre-spike levels. Congrats to Twitter team! [Tweet]. Twitter. [https://x.com/elonmusk/status/1595630109116989440](https://x.com/elonmusk/status/1595630109116989440)
+
+Rightpedia. (2018). _Rightpedia_. [https://en.rightpedia.info/w/Rightpedia](https://en.rightpedia.info/w/Rightpedia) (accessed 28 October 2018).
+
+Twitter. (2010a, July 1). _Twitter: About_. [https://web.archive.org/web/20100701014108/http://twitter.com/about](https://web.archive.org/web/20100701014108/http://twitter.com/about)
+
+Twitter. (2010b, July 23). _The Twitter Rules_. [https://web.archive.org/web/20100723013149/http://support.twitter.com/groups/33-report-a-violation/topics/121-guidelines-best-practices/articles/18311-the-twitter-rules](https://web.archive.org/web/20100723013149/http://support.twitter.com/groups/33-report-a-violation/topics/121-guidelines-best-practices/articles/18311-the-twitter-rules)
+
+Twitter. (2013, August 17). _Abusive behavior policy_. [https://web.archive.org/web/20130817034649/https://support.twitter.com/groups/56-policies-violations/topics/236-twitter-rules-policies/articles/20169997-abusive-behavior-policy](https://web.archive.org/web/20130817034649/https://support.twitter.com/groups/56-policies-violations/topics/236-twitter-rules-policies/articles/20169997-abusive-behavior-policy)
+
+Twitter. (2014, July 4). _Abusive behavior policy_. [https://web.archive.org/web/20140407150157id_/https://support.twitter.com/articles/20169997](https://web.archive.org/web/20140407150157id_/https://support.twitter.com/articles/20169997)
+
+Twitter. (2017a, April 11). _Specific instances when a Tweet’s reach may be limited_. [https://web.archive.org/web/20170411222158/https://support.twitter.com/articles/20175243](https://web.archive.org/web/20170411222158/https://support.twitter.com/articles/20175243)
+
+Twitter. (2017b, December 20). _Violent extremist groups_. [https://web.archive.org/web/20171220212715/https://help.twitter.com/en/rules-and-policies/violent-groups](https://web.archive.org/web/20171220212715/https://help.twitter.com/en/rules-and-policies/violent-groups)
+
+Twitter. (2018, December 31). _Hateful conduct policy_. [https://help.twitter.com/en/rules-and-policies/hateful-conduct-policy](https://help.twitter.com/en/rules-and-policies/hateful-conduct-policy)
+
+Twitter. (2019, October 15). _World leaders on Twitter: Principles and approach_. _Twitter Blog_. [https://blog.twitter.com/en_us/topics/company/2019/worldleaders2019](https://blog.twitter.com/en_us/topics/company/2019/worldleaders2019)
+
+Twitter. (2020a, February 7). _Synthetic and manipulated media policy_. [https://web.archive.org/web/20200207000218/https://help.twitter.com/en/rules-and-policies/manipulated-media](https://web.archive.org/web/20200207000218/https://help.twitter.com/en/rules-and-policies/manipulated-media)
+
+Twitter. (2020b, April). _Coronavirus: Staying safe and informed on Twitter_. _Twitter Blog_. [https://blog.twitter.com/en_us/topics/company/2020/covid-19](https://blog.twitter.com/en_us/topics/company/2020/covid-19)
+
+Twitter. (2020c, May 11). _Coronavirus: Staying safe and informed on Twitter_. _Twitter Blog_. [https://blog.twitter.com/en_us/topics/company/2020/covid-19](https://blog.twitter.com/en_us/topics/company/2020/covid-19)
+
+Twitter. (2020d, December 16). _COVID-19 misleading information policy_. [https://web.archive.org/web/20201216200114/https://help.twitter.com/en/rules-and-policies/medical-misinformation-policy](https://web.archive.org/web/20201216200114/https://help.twitter.com/en/rules-and-policies/medical-misinformation-policy)
+
+Twitter. (2021a, January 8). _Permanent suspension of @realDonaldTrump_. _Twitter Blog_. [https://blog.twitter.com/en_us/topics/company/2020/suspension](https://blog.twitter.com/en_us/topics/company/2020/suspension)
+
+Twitter. (2021b, January). _Civic integrity and election fraud policy_. [https://help.twitter.com/en/rules-and-policies/election-integrity-policy](https://help.twitter.com/en/rules-and-policies/election-integrity-policy)
+
+Twitter. (2021c, June 10). _Parody, newsfeed, commentary, and fan account policy_. [https://help.twitter.com/en/rules-and-policies/parody-account-policy](https://help.twitter.com/en/rules-and-policies/parody-account-policy)
+
+Twitter. (2022a, July). _Civic integrity policy_. [https://web.archive.org/web/*/https://help.twitter.com/en/rules-and-policies/election-integrity-policy](https://web.archive.org/web/*/https://help.twitter.com/en/rules-and-policies/election-integrity-policy)
+
+Twitter. (2022b, July). _Glorification of violence_. [https://web.archive.org/web/*/https://help.twitter.com/en/rules-and-policies/glorification-of-violence](https://web.archive.org/web/*/https://help.twitter.com/en/rules-and-policies/glorification-of-violence)
+
+Twitter. (2022c, July). _Platform manipulation policy_. [https://web.archive.org/web/*/https://help.twitter.com/en/rules-and-policies/platform-manipulation](https://web.archive.org/web/*/https://help.twitter.com/en/rules-and-policies/platform-manipulation)
+
+Twitter. (2022d, July). _Sensitive media_. [https://web.archive.org/web/*/https://help.twitter.com/en/rules-and-policies/media-policy](https://web.archive.org/web/*/https://help.twitter.com/en/rules-and-policies/media-policy)
+
+Twitter. (2022e, July). _Synthetic and manipulated media policy_. [https://web.archive.org/web/*/https://help.twitter.com/en/rules-and-policies/manipulated-media](https://web.archive.org/web/*/https://help.twitter.com/en/rules-and-policies/manipulated-media)
+
+Twitter. (2022f, July). _Twitter Rules and Policies_. [https://web.archive.org/web/*/https://help.twitter.com/en/rules-and-policies](https://web.archive.org/web/*/https://help.twitter.com/en/rules-and-policies)
+
+Twitter. (2022g, July). _Violent threats_. [https://web.archive.org/web/*/https://help.twitter.com/en/rules-and-policies/violent-threats-glorification](https://web.archive.org/web/*/https://help.twitter.com/en/rules-and-policies/violent-threats-glorification)
+
+Wikipedia. (2018a). _Talk: Race and intelligence_. [https://en.wikipedia.org/w/index.php?title=Talk:Race_and_intelligence&oldid=862071859](https://en.wikipedia.org/w/index.php?title=Talk:Race_and_intelligence&oldid=862071859) (accessed 28 October 2018).
+
+Wikipedia. (2018b). _Wikipedia: About_. [https://en.wikipedia.org/w/index.php?title=Wikipedia:About&oldid=862617544](https://en.wikipedia.org/w/index.php?title=Wikipedia:About&oldid=862617544) (accessed 28 October 2018).
+
+Wikipedia. (2018c). _Wikipedia: Introduction_. [https://en.wikipedia.org/w/index.php?title=Wikipedia:Introduction&oldid=861666306](https://en.wikipedia.org/w/index.php?title=Wikipedia:Introduction&oldid=861666306) (accessed 28 October 2018).
+
+Wikipedia. (2018d). _Wikipedia: Purpose_. [https://en.wikipedia.org/w/index.php?title=Wikipedia:Purpose&oldid=862996624](https://en.wikipedia.org/w/index.php?title=Wikipedia:Purpose&oldid=862996624) (accessed 28 October 2018).
+
+X. (2024). _X’s enforcement philosophy and approach to policy development_. [https://help.x.com/en/rules-and-policies/enforcement-philosophy](https://help.x.com/en/rules-and-policies/enforcement-philosophy)
+
+X. (2025a). _Our policy on violent organizations_. [https://help.x.com/en/rules-and-policies/violent-entities](https://help.x.com/en/rules-and-policies/violent-entities)
+
+X. (2025b). _Working with the Community Notes data_. [https://communitynotes.x.com/guide/en/under-the-hood/download-data](https://communitynotes.x.com/guide/en/under-the-hood/download-data)
+
+X. (2025c). _X’s civic integrity policy_. [https://help.x.com/en/rules-and-policies/election-integrity-policy](https://help.x.com/en/rules-and-policies/election-integrity-policy)
+
+X Safety. (2023a, March 21). We recently partnered with @Sprinklr for an independent assessment of hate speech on Twitter [Tweet]. X. [https://x.com/Safety/status/1638255718540165121](https://x.com/Safety/status/1638255718540165121)
+
+X Safety. (2023b, September 18). _Stand with X to protect free speech_. [https://blog.x.com/en_us/topics/company/2023/stand-with-x-to-protect-free-speech](https://blog.x.com/en_us/topics/company/2023/stand-with-x-to-protect-free-speech)
+
+X Safety. (2024, June 4). We want our policies to be as clear, helpful, and transparent as possible [Tweet]. X. [https://x.com/Safety/status/1798112474803446138](https://x.com/Safety/status/1798112474803446138)
+
+YouTube. (2019b, June 5). _Our ongoing work to tackle hate_. _Official YouTube Blog_. [https://blog.youtube/news-and-events/our-ongoing-work-to-tackle-hate/](https://blog.youtube/news-and-events/our-ongoing-work-to-tackle-hate/)
+
+YouTube. (2020b). _Hate speech policy_. _YouTube Help_. [https://support.google.com/youtube/answer/2801939?hl=en](https://support.google.com/youtube/answer/2801939?hl=en)
+
+<div class="page-break"></div>
+
+<div class="page-break"></div>
