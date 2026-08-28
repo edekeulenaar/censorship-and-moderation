@@ -103,7 +103,7 @@ It is important to highlight what is meant by "distant reading", here. In one se
 
 Next, we looked at how commenters discussed YouTube's content moderation, or moderation in general. This implied filtering comments for sentences containing the expressions "YouTube should", "YouTube should remove" or "YouTube should allow", and then finding prominent themes in the ending of each sentence. We used word trees [@wattenbergWordTreeInteractive2008] for this task. The technique finds sentence completions for common prefixes and guided the close reading that follows rather than serving as a standalone result. As we found diverging ideas of what and how YouTube ought to moderate, we also examined how users conceptualised YouTube as a space, comparing sentences that mentioned "YouTube is" over time (**Figures 8 and 9**).
 
-![Figure 1](images/Emillie%20AoIR%20method%202022.png)
+![](images/Emillie%20AoIR%20method%202022.png)
 **Figure 1.** Method diagram. ^figure-1
 
 ## Findings
@@ -114,7 +114,7 @@ Looking at YouTube, we see that its policies, like Twitter's (see [Part V. Modul
 
 Then, from 2014 onwards, policies undergo a period of conceptual refinement, or complexification [@passmannHealthyCommunitiesToxic2023b]. Technically, the Community Guidelines page fragments into pages dedicated to each type of sanctioned object: hate speech, spam, violent or graphic content, harmful or dangerous content, and content deriving from salient events, such as the COVID-19 crisis and elections. In this context, enforcement techniques begin to move from a plethora of deletion methods to dynamic demotion. This technique is explicitly applied to what the platfrom calls "borderline content" [@youtubeFourRsResponsibility2021], which denotes conspiratorial, hateful or other content with varying levels of objectionability, depending on context, public or regulatory opinion. 
 
-![Figure 2](images/Figure%202%205.png)
+![](images/Figure%202%205.png)
 **Figure 2a.** *Number of YouTube policy edits (2006-2022) and mentions of enforcement options (2007-2021).* ^figure-2a
 
 ### Comments: from unacceptable speech to unacceptable speech moderation

@@ -22,7 +22,7 @@ Users may want to enforce their own norms, through community guidelines, mods, a
 
 While enforcing content moderation policies, content moderation techniques and user cultures effectively enforce the "explicit and implicit" norms [@ayalaSpeechAffordancesStructural2016, 3] around what can be saidin a given platform. That is, they constitute a "possibility space" for speech agency [@haslangerWhatSocialStructural2016, 18]. One implication, which I will highlight in the case study that follows, is that instead of being relegated solely to less moderated platforms, objectionable speech is fragmented into different messages that can be still be _sayable_ for a platform or user base's normative standards. We will see how the initial "base meaning" of the Kekistan meme, originally formulated on 4chan/pol, was that it was an online ethno-state for white nationalism, and was progressively fragmented into overt and covert messages tailored to Twitter and YouTube comment section out-groups.
 
-![Figure 1](images/Figure%201.png)
+![](images/Figure%201.png)
 **Figure 1**. *Simplified summarisation of speech affordances across Twitter, the YouTube comment section and 4chan.* ^figure-1
 
 ### How did speech affordances form the Kekistan meme?
@@ -56,7 +56,7 @@ This is to say that Kekistan's original meaning as a white nationalist meme-flag
 
 It could be said that the dissemination of Kekistan reflects the volatile ideological cacophony of the online 2016–2018 "culture wars", waged as caricatural debates on highly controversial topics such as race, identity and nationality. The wave of content moderation that followed, whereby both Twitter and YouTube took stronger measures to identify, delete, demonetise or demote objectionable content — including mentions of Kekistan (Figure 3) — may have reassured some that the extreme elements of those debates had been marginalised outside actively moderated platforms. But such elements may re-emerge today in the same way as they did in 2016, for they continue to be active wherever their expression is best afforded. In this sense, platforms find themselves playing a cat-and-mouse game with content they had once removed.
 
-![Figure 3](images/Figure%203.png)
+![](images/Figure%203.png)
 **Figure 3**. *Available and moderated tweets having referred to "kekistan" in 2017.*
 
 As an alternative, one could monitor the extent to which public debate takes place across a fringe-to-mainstream ecology (across which "extreme" speech is increasingly codified as "taboo"), in order to address the more or less inexpressible ideas and sentiments of a given public debate. In doing so, one may also map the very constitution of public speech norms – that is, what different publics consider to be acceptable to say and why – in order to formulate content moderation measures that bear consensus across platforms. This exercise may be applied to speech regulation not solely tied to US issues, but phenomena as widespread as incitement speech, intolerance, revisionism and other expressions of historical violence that may one day return to the public mainstream.

@@ -218,7 +218,7 @@ Here, the analysis consisted in verifying what was removed and what remained onl
 
 ### Total values
 
-![Table 3](images/Screenshot%202025-07-11%20at%2012.40.22.png)
+![](images/Screenshot%202025-07-11%20at%2012.40.22.png)
 **Table 3**. Total distributions across community notes and posts obtained via search results.
 
 ## What Twitter was
@@ -229,7 +229,7 @@ In what follows, I look more specifically at how X policies and content moderati
 
 Before Musk’s takeover, it could be argued that Twitter underwent three major phases. The first spanned from roughly 2010 to 2016 and was initially defined by a relatively lax model of moderation. As a self-described “aggressively open company” [(Twitter, 2010)](https://www.google.com/url?q=https://www.zotero.org/google-docs/?T6LuS8&sa=D&source=editors&ust=1747176145201260&usg=AOvVaw0lwvA3o2WE5qf5tLID-rnE), users “owned” what they “shared” (ibid): they bore responsibility for “the content he or she provided” as much as they exercised the knowledge to judge what may be unacceptable to themselves and others. The only exception to the rule was content that could enter the jurisdiction of local law enforcement, which the platform frequently mentioned in its Abusive behavior policy. This included specific statements of violence against others and other content that may lead to physical consequences against users [(Twitter, 2013)](https://www.google.com/url?q=https://www.zotero.org/google-docs/?7mv17L&sa=D&source=editors&ust=1747176145201939&usg=AOvVaw2RCyBLzyOlAzPTtwuThLDM). The level of tolerance for these kinds of content was minimal, though not absolutely so. While most measures were phrased vaguely as internal “investigations for abuse”, they were the only types of content other than “direct, specific threats of violence against others” that deserved a permanent suspension.
 
-![Figure 5](images/image18.png)
+![](images/image18.png)
 **Figure 5**. Twitter’s content moderation regime circa 2010. White rings represent policies and colored rings their respective enforcement measures, arranged sequentially in the order of their application. Full image [here](https://www.google.com/url?q=https://drive.google.com/file/d/1Yn9W6NJlQz0VIll0O35dSx4m658NH_E2/view?usp%3Dshare_link&sa=D&source=editors&ust=1747176145202844&usg=AOvVaw3u78Vcqu3g38KlWrbhZg58).
 
 ### 2013-2017: deletions and suspensions
@@ -245,7 +245,7 @@ In response to the first techlash of 2018, Twitter had, by 2020, developed a num
 
 At the same time, the dynamic aspects of objectionability — the possibility that some content may become problematic tomorrow, based on the shifting norms of users and institutions — pushed Twitter, Google and Meta to design more granular moderation techniques. These are demotion (downranking tweets in replies and newsfeeds); hiding sensitive or problematic tweets unless a user clicks on them; and a “strike system” that allows users to return after temporary suspension. From 2016, then, moderation techniques shifted from a relatively binary logic of deletion and suspension, to one where Twitter attempted to preemptively moderate potentially and relatively objectionable content. 
 
-![Figure 7](images/image32.png)
+![](images/image32.png)
 **Figure 7**. Twitter’s content moderation regime circa 2019-21. White rings represent policies and colored rings their respective enforcement measures, arranged sequentially in the order of their application. Full image [here](https://www.google.com/url?q=https://drive.google.com/file/d/1IK-9vJ74RXVervTjQU1pdJiBBBYVC123/view?usp%3Dshare_link&sa=D&source=editors&ust=1747176145206526&usg=AOvVaw0tJjj32XDYqj95m179c-yP).
 
 The end result, in Figure 7, was a platform that simultaneously maintained clearly defined boundaries (seen in dark red, indicating permanent suspensions) as well as conditions or modular ones (seen in blue shades, indicating demotion or rendering content invisible). In more or less discrete funding calls, Twitter invited content moderation initiatives more attuned to the “health of public debate” [(Twitter, 2018)](https://www.google.com/url?q=https://www.zotero.org/google-docs/?jl6Y2l&sa=D&source=editors&ust=1747176145207179&usg=AOvVaw3IMGwAEAoINs2GVWtjKYnF), using a terminology alluding to public or civic dialogue, depolarisation and conflict reconciliation. Community Notes emerged in this context as an improved type of “fact checking”, where “truth” would emerge not from authoritative sources but public consensus.
@@ -258,7 +258,7 @@ That was the platform that Musk acquired: one that, while complexifying and enfo
 
 How exactly did this philosophy influence X’s content moderation policies? From Figure 8, one can tell that nearly all content moderation policies have undergone some changes in the Summer of 2023 and towards March 2024; I will revisit each in detail below. On a macro level, it is also evident that some policies having to do with COVID have been removed — because “COVID is no longer an issue” (Musk in Clayton, 2023). Others have been merged and simplified into three policy sectors: (1) “Platform integrity and authenticity” for anything relating to spam, platform manipulation, manipulated media, username squatting and civic integrity; (2) “Safety and Cybercrime” for violent content, child safety, illegal goods, and adult content; and (3) “Platform Use Guidelines” for questions relating to the platform’s general philosophy and usage.
 
-![Figure 8](images/image28.png)
+![](images/image28.png)
 **Figure 8**. Beeswarm showing absolute number of word differences per Twitter/X policy, 2010-2025. Blue dots represent changes on Twitter, and yellow dots on X. Red dots represent instances in which a policy has been removed. Policy names and structure are from December 2024. Full image [here](https://www.google.com/url?q=https://drive.google.com/file/d/1I7KT4VM4NGmLJbKXENqpwJG0agGqBZku/view?usp%3Dshare_link&sa=D&source=editors&ust=1747176145211007&usg=AOvVaw0twxywAzRFjRKqznSiEUA8).
 
 This restructuring is contingent on policies becoming more minimalistic, in the sense that they are simplified into one single, core purpose. This was part of an effort by the X Safety team to “consolidate a number of pages […] and roll out a new, simplified template”, reducing “the overall number of articles and total word count significantly”, in order to make rules “clearer for everyone” (X Safety, 2024). Previously separate, the Abusive behaviour and Hateful conduct policies have been merged into a new Violent content policy that focuses mostly on the physical aspect and potential of online violence, rather than personal offences or “cultures” of violence (in the sense of beliefs, ideas or attitudes that may legitimize violent dispositions). Likewise, policies under the “Platform integrity and authenticity” section now focus mostly on “artificial” or instrumentalized platform manipulation, such as attempts to boost engagement, trick platform mechanisms, and so on. The terminology of “misinformation” — “misleading” content, “deceptive” behaviour — is removed or minimized.
@@ -308,14 +308,14 @@ Another policy that underwent significant changes was Adult content, previously 
 
 This move has been reported as an effort to tap into more streams of revenue (Oremus & Hunter, 2024), or Musk wishing X to become a “super app” with multiple capacities beyond pure social media (Heath, 2023). Philosophically, this change is also concomitant to X wanting to become the platform for free speech, including “sexual expression” as a form of “artistic expression” (see [Figure 14](Figure%2014)).
 
-![Figure 14](images/image17%201.png)
+![](images/image17%201.png)
 **Figure 14**. From Sensitive media policy to Adult content. Full image [here](https://www.google.com/url?q=https://drive.google.com/file/d/1PFuQOJHnWIqc4_1CtGDbYfp78N3qnAOw/view?usp%3Dshare_link&sa=D&source=editors&ust=1747176145226422&usg=AOvVaw1VulhbIWHJc4QYLLjPKFys).
 
 #### The policies that stay the same
 
 The policies that have remained the same tend to be those where objectionable content is defined and sanctioned by the law, or are subjects against which there is already widespread disapproval. This includes, of course, Child sexual exploitation (now Child safety), and Violent and hateful entities. Child safety forbids any and all kinds of harm against children, and requires — unlike most other policies — immediate and permanent suspensions of users, no matter the context.
 
-![Figure 15](images/Figure%2015.png)
+![](images/Figure%2015.png)
 **Figure 15**. The Child Safety policy before and after Musk. Full policy [here](https://www.google.com/url?q=https://drive.google.com/file/d/197IvDjCqo57_o1za94jHBJNoZ22gF23S/view?usp%3Dshare_link&sa=D&source=editors&ust=1747176145227548&usg=AOvVaw3lfO4JQQQ3eaWkTLvfOVNo).
 
 Violent and hateful entities is an interesting case, because it was first designed to prevent the circulation of jihadist content around 2017 [(Twitter, 2017)](https://www.google.com/url?q=https://www.zotero.org/google-docs/?7HHpbu&sa=D&source=editors&ust=1747176145227877&usg=AOvVaw1z96xUrjFts121P2Wf0miF). Over time, it began to target domestic terrorism (as seen in Germany and New Zealand in 2019) enacted by “hateful groups”. Though the Hateful conduct policy may have dropped language seen as left-wing “partisan”, this policy retains sanctions against groups that target or harass a “protected category” [(X, 2025a)](https://www.google.com/url?q=https://www.zotero.org/google-docs/?GAdWdl&sa=D&source=editors&ust=1747176145228323&usg=AOvVaw1hj6tIREJ_cIDzFUGD2DbN). For the rest, it retains its sanctions partly because they are already strongly bound by international law and industry initiatives, such as the Global Internet Forum to Counter Terrorism.
@@ -324,7 +324,7 @@ Violent and hateful entities is an interesting case, because it was first desig
 
 On the level of content moderation practices or techniques, I note a similar move towards simplification. For one, there are no clear mentions of measures being executed consequentially; they are all, more or less, imposed in extremis, when absolutely necessary. As shown in Figure 15, these are: (1) requesting a user to remove their content; (2) suspending that account in case they do not comply; and (3) reducing the content’s visibility by downranking them, removing them from certain parts of the website, excluding ads from that content, and labelling a demoted tweet. Even then, X only requires a user to remove their post “if the violation is severe enough” (in place of “we require the violator to remove it before they can Tweet again” on Twitter), and permanent suspension is no longer explicitly enforced (X Help Center, 2024). The only exception to these rules is content that is invariably objectionable, such as child abuse, violent entities and non-consensual adult content.
 
-![Figure 16](images/image31.png)
+![](images/image31.png)
 **Figure 16**. X’s content moderation regime in 2024. White rings represent policies and colored rings their respective enforcement measures, arranged sequentially in the order of their application. Note: the cut-out of Community Notes on the left is to make space for legends. Full image [here](https://www.google.com/url?q=https://drive.google.com/file/d/1HseZx0i4U98bs7ERNLYPS0J0EbNeGxCw/view?usp%3Dshare_link&sa=D&source=editors&ust=1747176145230566&usg=AOvVaw0lV8ghf7-dyEYA--yZsvL0).
 
 This is also reflected in X’s Enforcement Options document. By the time of Musk’s takeover, “limiting tweet visibility” was moved front and center. It is no longer just a complementary, interim measure used while waiting for a user to remove a post or return from a period of suspension. It also appears to have become more complex. While they may have been less clear in pre-Musk policies, “demotion” as a general technique previously resorted to making tweets ineligible in search results or timelines; excluding them from email or product recommendations; and burying them down replies and search results (without the possibility to share them). Post-Musk measures now include the temporary loss of X features and exclusion of ads.
@@ -337,7 +337,7 @@ Having laid out content moderation changes on paper, I now turn to an analysis o
 
 Let us first look at demotions for one keyword — “buitenlander” — and then proceed with average demotions for all keywords. In the case of Figure 17, representing the search ranking of posts, the posts with the highest “hate scores” tend to have lower impressions (represented by dot size), and be within the 20th and lower search rankings. Removed posts tend to be located on the 40th ranking and lower.
 
-![Figure 17](images/image29.png)
+![](images/image29.png)
 **Figure 17**. Demotion and deletion of posts mentioning “buitenlander” between September and October 2024. Full image [here](https://www.google.com/url?q=https://drive.google.com/file/d/1AC4qRHV4BnmORxSNI-_WTv28LiHkfP-q/view?usp%3Dshare_link&sa=D&source=editors&ust=1747176145233997&usg=AOvVaw1WzArrX84s5VVnrMdyBBAA).
 
 Taking a step back to look at general averages across 100 ranked posts, we see that posts with a high hate score tend to be in a slightly lower position compared to low hate score posts. Posts with a score of 0.75 tend to be positioned on the 51st rank, while those with a score of 0.25 or lower tend to be on the 49th rank. Impressions also tend to be slightly lower: 4.921 views on average for posts with a score of 0.75 or above versus 14.283 views on average for those with a score of 0.25 or less.
@@ -352,7 +352,7 @@ Taking a step back to look at general averages across 100 ranked posts, we see t
 
 This is also reflected in Pearson’s correlations (Figure 18). Posts with higher hate scores are placed in slightly lower ranks compared to those with lower scores. The correlation coefficient of 0.008 suggests this effect is very weak, meaning hate scores only slightly impact ranking. On the other hand, higher hate scores are slightly associated with fewer views (-0.16 correlation), though the effect is once again small. In this sense, neither relationship is strong enough to suggest a platform-wide suppression effect based solely on hate scores — at least not for this dataset (in a minority language), and with hate scores estimated by OpenAI and not Sprinklr. Other factors such as engagement and recency may play a larger role.
 
-![Figure 18](images/image21.png)
+![](images/image21.png)
 **Figure 18**. Pearson’s correlation coefficient measures the strength of the relationship between post rankings, views, and hate score
 
 Though correlations are not strong, I find that posts with high hate scores are more transitory, in the sense that they tend to move across slightly more rankings then those with higher hate scores (Table 4).  
@@ -367,7 +367,7 @@ Though correlations are not strong, I find that posts with high hate scores are 
 
 Figure 18 illustrates this in more context. One can see the average ranking and hate score for a cut-off point of 100 posts overtime. Posts with high hate scores tend to be on the lower bottom of search results (~70 or lower), with the exception of one, in second position and low impressions, whose ranking eventually dropped over time.
 
-![Figure 19](images/image30.png)
+![](images/image30.png)
 **Figure 19**. Average demotion, engagement and position for all posts mentioning any and all queries between September and October 2024. Full image [here](https://www.google.com/url?q=https://drive.google.com/file/d/1aGkQh1zCOe-7Q3ZdecBBx6i1aaC1Fvto/view?usp%3Dshare_link&sa=D&source=editors&ust=1747176145244750&usg=AOvVaw1uGqN5RObgSPyKZ1iMupFg).
 
 It must be said, however, that the general sentiment with regards to immigration is largely negative — making the expression of hateful sentiments no surprise, and hate speech detection somewhat redundant. Of 23,073 posts, 14,049 expressed sentiments against immigration, versus 4,442 with neutral sentiments, 2,986 in favour, and 1,257 with other sentiments. In other words, hateful language may be somewhat indistinguishable within largely negative content.
@@ -380,12 +380,12 @@ This is the context in which developers have turned to another form of content m
 
 We begin by looking at the weighted distribution of all community notes across post users and topics. For users, one can see in Figure 19 that the majority of all notes — regardless of rating — are directed at alternative influencers, who, in turn, post about conspiracy theories, energy and climate change, healthcare and wellbeing and other topics. While the majority of note ratings towards alternative influencers need more ratings, this shows that, in this dataset at least, community notes are primarily used to correct “factualities” or a lack thereof. The second most community noted type of user are political entities: Dutch far-right or right-wing politicians or parties are the authors of 9.02% of community noted posts, versus 3.86% by the Dutch centre-left. Journalists, fact-checkers, columnists, commentators, news media, broadcasters and academics account for a similar share.
 
-![Figure 20](images/image27.png)
+![](images/image27.png)
 **Figure 20**. Weighted percentages of community note ratings per user type and the topic they post about. Numbers represent percentages of posts for a given rating, user type or topic. Full image here.
 
 Figure 21 shows that the majority of topics that get community noted include: history and historical conflicts (the war in Ukraine, the war in Gaza, or tensions arising from the war in Gaza); Dutch politics (Dutch government, cabinet or parliament; Dutch right-wing politicians or party); energy and climate (climate change in particular, but also the Dutch farmer crisis); and, finally, migration (in general, and tensions related to it). In a minority of cases, the majority of notes rated helpful are, as indicated in the previous figure, those that attempt to correct or contextualise posts about conspiracy theories. In the large majority of cases, community notes need more ratings — particularly in topics that are deeply contentious, such as the above-mentioned historical conflicts, migration and Dutch politics in general. While community notes may function on a logic of consensus-building, it may not always succeed to reach consensus for notes added to deeply contentious topics.
 
-![Figure 21](images/image33.png)
+![](images/image33.png)
 **Figure 21**. Weighted percentages of community note ratings per topic category and subtopic. Numbers represent percentages of posts for a given rating and topic.
 
 ### Deletion
@@ -411,7 +411,7 @@ Still, where there are limitations in content moderation and platform design, th
 5. Legal frameworks for “prosocial” design: These efforts call for deeper investment in developing legal frameworks that can enforce or incentivize prosocial platform designs. Analogue media like public broadcasting systems can serve as historical precedent, particularly in how they promoted pluralism, inclusivity, and informed public debate.
 6. Algorithmic literacy and public media outreach: Finally, the results from these design and governance initiatives can feed into broader public and media literacy efforts, enhancing public understanding of how civic values can and should be translated into algorithmic systems.
 
-![Figure 22](images/image26.png)
+![](images/image26.png)
 **Figure 22**. Diagram showing multiple points of intervention for promoting alternative platform design mechanisms. See Weyl et al., 2025 for the table shown in the diagram.
 
 Within this configuration, investing in moderation and consensus-building mechanisms can be a point of entry for European influence in a broader marketplace for platform design, and thus a more sustainable model of content moderation development.
