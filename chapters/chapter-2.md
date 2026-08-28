@@ -125,10 +125,10 @@ To examine X demotion (or a consequence of such), one can compare the rankings o
 
 ### Contextualisation
 
-The final step in this procedure is to contextualise instances of labelling, deplatforming or demotion. The idea is to understand how policy implementations were made in the context of external or online events. The researcher can refer to the information extracted from relevant platform policies and date the implementations of enforcement measures in their case studies. Here, for example, we can keep track of all the updates of YouTube’s hate speech (and related) policies to make sense of which content from a dataset of political videos was targeted, and when.
+The final step in this procedure is to contextualise instances of labelling, deplatforming or demotion. The idea is to understand how policy implementations were made in the context of external or online events. The researcher can refer to the information extracted from relevant platform policies and date the implementations of enforcement measures in their case studies. Here, for example, we can keep track of all the updates of YouTube’s hate speech (and related) policies to make sense of which content from a dataset of political videos was targeted, and when ([Figure 6](#^figure-6)).
 
 ![](images/Figure%2022.6.png)
-**Figure 6**. *Reverse-engineering content moderation practices.*
+**Figure 6**. *Reverse-engineering content moderation practices.* ^figure-6
 
 ## Capturing user effects
 

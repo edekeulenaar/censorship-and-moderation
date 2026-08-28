@@ -4,6 +4,4 @@ In Internet studies, content moderation is typically framed as a question of pla
 
 <div class="page-break" style="page-break-before: always;"></div>
 
-
-<div class="page-break"></div>
 <div class="page-break"></div>
