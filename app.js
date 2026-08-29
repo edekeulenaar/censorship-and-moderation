@@ -756,7 +756,7 @@ function escapeHtml(s) {
 const CSV_BUST = String(Date.now());
 // Bump when the downloadable thesis.pdf is replaced, so readers never get a
 // stale cached copy from the browser / GitHub CDN.
-const PDF_VER = "20260828a";
+const PDF_VER = "20260828b";
 
 async function loadCSV(path) {
   const sep = path.includes("?") ? "&" : "?";
